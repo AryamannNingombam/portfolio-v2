@@ -1,0 +1,45 @@
+@import "../../variables";
+.navbarMenuButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  width: 95%;
+  height: $landing-navbar-height;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  .open.menuButtonBurger {
+    transform: translateZ(-10px);
+    background: transparent;
+    &::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
+    &::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+    }
+  }
+  .menuButtonBurger {
+    width: 50px;
+    height: 6px;
+    background: $secondary-color;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 6px;
+      background: $secondary-color;
+      border-radius: 5px;
+      transition: all 0.5s ease-in-out;
+    }
+    &::before {
+      transform: translateY(-16px);
+    }
+    &::after {
+      transform: translateY(16px);
+    }
+  }
+}
