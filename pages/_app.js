@@ -1,5 +1,6 @@
-import dynamic from "next/dynamic";
 import "styles/globals.scss";
+import { AnimatePresence } from "framer-motion";
+import dynamic from "next/dynamic";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
