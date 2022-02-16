@@ -11,7 +11,7 @@ export const NAVBAR_LINKS = [
   },
   {
     name: "Work",
-    link: "/work",
+    link: "/work/krypto-cards",
     distance: dist * 3,
   },
   {

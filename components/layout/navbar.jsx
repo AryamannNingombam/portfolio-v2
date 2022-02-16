@@ -10,7 +10,10 @@ const returnItem = (dist) => ({
 });
 
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: {
+    opacity: 1,
+    scale: 0,
+  },
   visible: {
     opacity: 1,
     scale: 1,
@@ -37,18 +40,18 @@ export default function Navbar() {
             animate="visible"
           >
             {NAVBAR_LINKS.map((value, index) => (
-              <motion.h4
+              <motion.span
                 onClick={() => {
                   console.log("CLICKED");
                   Router.push(value.link);
                 }}
                 key={index}
-                className="item"
+                className={Styles.item}
                 variants={returnItem(value.distance)}
               >
                 {" "}
-                {value.name}
-              </motion.h4>
+                <span className={Styles.mainText}>{value.name}</span>
+              </motion.span>
             ))}
           </motion.ul>
         )}
