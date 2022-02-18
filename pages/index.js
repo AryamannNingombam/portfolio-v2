@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Navbar />
       {[...Array(10)].map((_, i) => (
-        <HeroSection key={i} />
+        <HeroSection heading={"WORK"} key={i} />
       ))}
     </>
   );
