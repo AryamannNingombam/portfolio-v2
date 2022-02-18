@@ -1,5 +1,5 @@
 import "styles/globals.scss";
-import Router from "next/Router";
+import router from "next/router";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import TopBarProgress from "react-topbar-progress-indicator";
@@ -29,11 +29,11 @@ TopBarProgress.config({
 function MyApp({ Component, pageProps }) {
   const [progress, setProgress] = useState(false);
 
-  Router.events.on("routeChangeStart", () => {
+  router.events.on("routeChangeStart", () => {
     setProgress(true);
     //when route change starts;
   });
-  Router.events.on("routeChangeComplete", () => {
+  router.events.on("routeChangeComplete", () => {
     setProgress(false);
     //when route change ends;
   });
