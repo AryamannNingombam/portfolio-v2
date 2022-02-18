@@ -34,7 +34,7 @@ export default function HeroSection(props) {
     <>
       <div
         style={{
-          margin: "20px auto",
+          margin: "23px auto",
           fontSize: "5rem",
           height: "100px",
           backgroundColor: "blue",
