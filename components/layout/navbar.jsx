@@ -1,13 +1,8 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Styles from "styles/components/layout/navbar.module.scss";
 import { motion } from "framer-motion";
 import { NAVBAR_LINKS } from "constants";
-import Router from "next/router";
-
-const returnItem = (dist) => ({
-  hidden: { x: 0, opacity: 0 },
-  visible: { x: dist * 4, opacity: 1, transition: { delay: 0.1 } },
-});
+import NavbarLink from "./navbar-link";
 
 const container = {
   hidden: {
@@ -40,18 +35,7 @@ export default function Navbar() {
             animate="visible"
           >
             {NAVBAR_LINKS.map((value, index) => (
-              <motion.span
-                onClick={() => {
-                  console.log("CLICKED");
-                  Router.push(value.link);
-                }}
-                key={index}
-                className={Styles.item}
-                variants={returnItem(value.distance)}
-              >
-                {" "}
-                <span className={Styles.mainText}>{value.name}</span>
-              </motion.span>
+              <NavbarLink key={index} value={value} />
             ))}
           </motion.ul>
         )}

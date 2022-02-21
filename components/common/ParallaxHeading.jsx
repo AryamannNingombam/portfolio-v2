@@ -1,4 +1,3 @@
-import MainImage from "assets/projects/mrex/mrex-logo.png";
 import Image from "next/image";
 import { useParallax } from "react-scroll-parallax";
 export default function ParallaxHeading({ title }) {
