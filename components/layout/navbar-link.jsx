@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Linear, TweenLite, gsap } from "gsap/dist/gsap";
-
+import { Link } from "react-scroll";
 import TextPlugin from "gsap/dist/TextPlugin";
 import Styles from "styles/components/layout/navbar.module.scss";
 import Router from "next/router";
@@ -36,7 +36,7 @@ export default function NavbarLink({ value }) {
     node.style.textAlign = "center";
 
     try {
-      let duration = tmpText.length * 0.01;
+      let duration = tmpText.length * 0.02;
       TweenLite.to(node, duration, {
         text: tmpText,
         ease: Linear.easeNone,
@@ -53,7 +53,6 @@ export default function NavbarLink({ value }) {
           });
         },
       });
-      console.log("animated");
     } catch (err) {
       console.log("ERROR");
       console.log(err);
@@ -61,17 +60,25 @@ export default function NavbarLink({ value }) {
   };
   return (
     <motion.span
+      className={`${Styles.item} ${Styles.mainText}`}
       onMouseOver={handleAnimation}
       data-text={value.name}
       ref={motionRef}
-      onClick={() => {
-        console.log("CLICKED");
-        // Router.push(value.link);
-      }}
-      className={Styles.item}
       variants={returnItem(value.distance)}
+      onClick={() => {
+        Router.push(value.link);
+      }}
     >
-      <span className={Styles.mainText}>{value.name}</span>
+      <Link
+        activeClass="active"
+        to={value.link}
+        spy={true}
+        smooth={true}
+        offset={70}
+        duration={500}
+      >
+        {value.name}
+      </Link>
     </motion.span>
   );
 }

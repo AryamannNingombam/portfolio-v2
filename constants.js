@@ -6,22 +6,27 @@ const dist = -10;
 export const NAVBAR_LINKS = [
   {
     name: "Home",
-    link: "/",
-    distance: dist * 4,
+    link: "#home",
+    distance: dist * 5,
   },
   {
     name: "Work",
-    link: "/work/krypto-cards",
-    distance: dist * 3,
+    link: "#work",
+    distance: dist * 4,
   },
   {
     name: "Projects",
-    link: "/projects",
-    distance: dist * 2,
+    link: "#projects",
+    distance: dist * 3,
   },
   {
     name: "Clubs",
-    link: "/clubs",
+    link: "#clubs",
+    distance: dist * 2,
+  },
+  {
+    name: "Awards",
+    link: "#awards",
     distance: dist * 1,
   },
 ];

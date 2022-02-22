@@ -4,7 +4,10 @@ $hamburger-height: 3px;
 $hamburger-width: 40px;
 $hamburger-distance: 13px;
 .navbarMenuButton {
-  position: relative;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -16,13 +19,11 @@ $hamburger-distance: 13px;
   .linkContainer {
     display: flex;
     flex-direction: row;
-    .item {
-      .mainText {
-        color: $secondary-color !important;
-        cursor: pointer;
-        font-size: 1.3rem;
-        font-weight: 600;
-      }
+    .item.mainText {
+      color: $secondary-color !important;
+      cursor: pointer;
+      font-size: 1.3rem;
+      font-weight: 600;
     }
   }
   .open.menuButtonBurger {

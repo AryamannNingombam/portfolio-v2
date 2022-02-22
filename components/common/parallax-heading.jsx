@@ -7,7 +7,7 @@ export default function ParallaxHeading({ title }) {
   return (
     <>
       <div style={{ margin: "100px" }} ref={parallax.ref}>
-        {title} HEHHEHEHH
+        {title}
       </div>
     </>
   );
