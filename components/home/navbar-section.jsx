@@ -1,4 +1,4 @@
-import "styles/components/home/hero.module.scss";
+import Styles from "styles/components/home/navbar-section.module.scss";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -18,6 +18,7 @@ const boxVariants = {
 export default function NavbarSection({ title, list }) {
   const controls = useAnimation();
   const { ref, inView } = useInView();
+
   const [done, setDone] = useState(false);
   useEffect(() => {
     if (!done) {
@@ -31,15 +32,8 @@ export default function NavbarSection({ title, list }) {
     }
   }, [controls, inView]);
   return (
-    <section id={title}>
-      <div
-        style={{
-          margin: "23px auto",
-          fontSize: "5rem",
-          height: "100px",
-          backgroundColor: "blue",
-        }}
-      >
+    <section className={Styles.mainSection} id={title}>
+      <div className={Styles.headingDiv}>
         <ParallaxHeading title={title} />
       </div>
       <motion.div
@@ -47,12 +41,7 @@ export default function NavbarSection({ title, list }) {
         initial="hidden"
         animate={controls}
         variants={boxVariants}
-        style={{
-          height: "300px",
-          width: "300px",
-          margin: "200px auto",
-          backgroundColor: "red",
-        }}
+        className={Styles.imageDiv}
       ></motion.div>
     </section>
   );

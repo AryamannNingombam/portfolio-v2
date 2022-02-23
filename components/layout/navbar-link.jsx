@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Linear, TweenLite, gsap } from "gsap/dist/gsap";
-import { Link } from "react-scroll";
 import TextPlugin from "gsap/dist/TextPlugin";
 import Styles from "styles/components/layout/navbar.module.scss";
 import Router from "next/router";
@@ -15,6 +14,7 @@ gsap.registerPlugin(TextPlugin);
 
 export default function NavbarLink({ value }) {
   const motionRef = useRef();
+  const linkRef = useRef();
   const handleAnimation = (e) => {
     let node = motionRef.current;
     let originalText = value.name;
@@ -65,20 +65,20 @@ export default function NavbarLink({ value }) {
       data-text={value.name}
       ref={motionRef}
       variants={returnItem(value.distance)}
-      onClick={() => {
-        Router.push(value.link);
+      onClick={(e) => {
+        if (value.link === "#home") {
+          window.scrollTo({
+            behavior: "smooth",
+            top: 0,
+          });
+        } else {
+          document.querySelector(value.link).scrollIntoView({
+            behavior: "smooth",
+          });
+        }
       }}
     >
-      <Link
-        activeClass="active"
-        to={value.link}
-        spy={true}
-        smooth={true}
-        offset={70}
-        duration={500}
-      >
-        {value.name}
-      </Link>
+      {value.name}
     </motion.span>
   );
 }
