@@ -5,6 +5,7 @@ import TopBarProgress from "react-topbar-progress-indicator";
 import dynamic from "next/dynamic";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Scrollbar from "smooth-scrollbar";
+import Scroll from "components/common/smooth-scroll";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -31,14 +32,6 @@ TopBarProgress.config({
 
 function MyApp({ Component, pageProps }) {
   const [progress, setProgress] = useState(false);
-  const ref = useRef();
-
-  useEffect(() => {
-    Scrollbar.init(ref.current);
-    return () => {
-      if (Scrollbar) Scrollbar.destroy(document.body);
-    };
-  }, []);
   router.events.on("routeChangeStart", () => {
     setProgress(true);
     //when route change starts;
@@ -48,7 +41,8 @@ function MyApp({ Component, pageProps }) {
     //when route change ends;
   });
   return (
-    <div ref={ref}>
+    <>
+      <Scroll />
       <ParallaxProvider>
         <AnimatedCursor
           innerSize={8}
@@ -61,7 +55,7 @@ function MyApp({ Component, pageProps }) {
         {progress && <TopBarProgress />}
         <Component {...pageProps} />
       </ParallaxProvider>
-    </div>
+    </>
   );
 }
 
