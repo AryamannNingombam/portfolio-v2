@@ -1,17 +1,12 @@
 import "styles/globals.scss";
 import router from "next/router";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import TopBarProgress from "react-topbar-progress-indicator";
 import dynamic from "next/dynamic";
 import { ParallaxProvider } from "react-scroll-parallax";
-import Scrollbar from "smooth-scrollbar";
-import Scroll from "components/common/smooth-scroll";
-
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
-
-// @TODO: https://dev.to/codebucks/implement-silky-smooth-scrolling-in-react-js-46fn
 
 TopBarProgress.config({
   barThickess: 5,
@@ -41,21 +36,18 @@ function MyApp({ Component, pageProps }) {
     //when route change ends;
   });
   return (
-    <>
-      <Scroll />
-      <ParallaxProvider>
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={30}
-          color="76,224,210"
-          outerAlpha={0.1}
-          innerScale={0.9}
-          trailingSpeed={5}
-        />
-        {progress && <TopBarProgress />}
-        <Component {...pageProps} />
-      </ParallaxProvider>
-    </>
+    <ParallaxProvider>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={30}
+        color="76,224,210"
+        outerAlpha={0.1}
+        innerScale={0.9}
+        trailingSpeed={5}
+      />
+      {progress && <TopBarProgress />}
+      <Component {...pageProps} />
+    </ParallaxProvider>
   );
 }
 

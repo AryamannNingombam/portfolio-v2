@@ -1,15 +1,14 @@
 import NavbarWrapper from "components/common/navbar-wrapper";
 import HeroSection from "components/home/hero";
 import NavbarSection from "components/home/navbar-section";
-import Navbar from "components/layout/navbar";
 export default function Home() {
   return (
     <NavbarWrapper>
       <HeroSection />
-      <NavbarSection title="projects" />
-      <NavbarSection title="work" />
-      <NavbarSection title="clubs" />
-      <NavbarSection title="awards" />
+      <NavbarSection title="Work Exp." />
+      <NavbarSection title="Latest Projects" />
+      <NavbarSection title="My Clubs" />
+      <NavbarSection title="Some Awards" />
     </NavbarWrapper>
   );
 }
