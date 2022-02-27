@@ -3,15 +3,8 @@
   min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // margin-bottom: 50px;
   .headingDiv {
-    color: $secondary-color;
-    opacity: 0.5;
     margin: 23px auto;
-    font-weight: lighter;
     white-space: nowrap;
   }
   .imageDiv {

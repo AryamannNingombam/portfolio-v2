@@ -1,12 +1,7 @@
-
-
-
 $primary-bg: #131515;
-$primary-color: #f46672;
-$secondary-color: #4ce0d2;
-$light-text-color: #f4f4f4;
+$secondary-color: #32cfa5;
+$light-text-color: #dfdfdf;
 $dark-text-color: #181818;
-
 
 @mixin responsive($breakpoint) {
   @if $breakpoint==desktop {
@@ -75,10 +70,6 @@ $dark-text-color: #181818;
     }
   }
 }
-
-// TSIZES
-$fontSize: 0.8rem, 0.9rem, 1rem, 1.2rem, 1.4rem, 1.8rem, 2rem, 2.4rem, 2.8rem,
-  3rem, 3.2rem, 3.8rem, 4rem, 5rem;
 
 // NAVBAR
 $landing-navbar-height: 80px;
