@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import Styles from "styles/utils/animated-text.module.scss";
 // Word wrapper
 const Wrapper = (props) => {
   // We'll do this to prevent wrapping of words using CSS
@@ -65,6 +65,7 @@ export default function AnimatedCharacters(props) {
                   key={index}
                 >
                   <motion.span
+                    className={Styles.subtitle}
                     style={{ display: "inline-block" }}
                     variants={item}
                   >

@@ -1,16 +1,13 @@
 import Styles from "styles/components/common/parallax-heading.module.scss";
-import { useParallax } from "react-scroll-parallax";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import AnimatedText from "utils/navbar/animated-text";
+import AnimatedText from "utils/animated-text";
+import AnimatedHeading from "utils/home/animated-heading";
 export default function ParallaxHeading({ title, subtitle }) {
   const controls = useAnimation();
   const { ref, inView } = useInView();
   const [done, setDone] = useState(false);
-  const parallax = useParallax({
-    speed: -10,
-  });
 
   const container = {
     visible: {
@@ -33,14 +30,13 @@ export default function ParallaxHeading({ title, subtitle }) {
 
   return (
     <motion.div
+      ref={ref}
       initial="hidden"
-      animate="visible"
+      animate={controls}
       variants={container}
       className={Styles.mainDiv}
     >
-      <span ref={parallax.ref} className={Styles.mainTitle}>
-        {title}
-      </span>
+      <AnimatedHeading heading={title} />
       <AnimatedText
         type="heading2"
         text={subtitle}

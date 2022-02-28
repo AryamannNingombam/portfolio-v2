@@ -6,18 +6,25 @@ export default function Home() {
     <NavbarWrapper>
       <HeroSection />
       <NavbarSection
+        link="work"
         title="Latest Work"
         subtitle="A section on my current work experience."
       />
       <NavbarSection
+        link="projects"
         title="Some Projects"
         subtitle="A list of my best projects"
       />
       <NavbarSection
+        link="clubs"
         title="My Clubs"
         subtitle="The clubs that I run in my college"
       />
-      <NavbarSection title="Awards List" subtitle="Awards that I have won" />
+      <NavbarSection
+        link="awards"
+        title="Awards List"
+        subtitle="Awards that I have won"
+      />
     </NavbarWrapper>
   );
 }

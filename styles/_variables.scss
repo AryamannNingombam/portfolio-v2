@@ -1,8 +1,8 @@
 $primary-bg: #131515;
 $secondary-color: #32cfa5;
-$light-text-color: #dfdfdf;
+$light-text-color: #ffffff;
 $dark-text-color: #181818;
-
+$primary-font: "Inter", sans-serif;
 @mixin responsive($breakpoint) {
   @if $breakpoint==desktop {
     @media only screen and (min-width: 1780px) {

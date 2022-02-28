@@ -15,7 +15,7 @@ const boxVariants = {
   },
 };
 
-export default function NavbarSection({ title, subtitle }) {
+export default function NavbarSection({ link, title, subtitle }) {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -32,7 +32,7 @@ export default function NavbarSection({ title, subtitle }) {
     }
   }, [controls, inView]);
   return (
-    <section className={Styles.mainSection} id={title}>
+    <section className={Styles.mainSection} id={link}>
       <div className={Styles.headingDiv}>
         <ParallaxHeading title={title} subtitle={subtitle} />
       </div>

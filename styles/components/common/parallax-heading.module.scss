@@ -1,25 +1,8 @@
 @import "../../variables";
 .mainDiv {
-  font-family: "Inter", sans-serif;
+  font-family: $primary-font;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .mainTitle {
-    position: relative;
-    top: 0;
-    color: transparent;
-    z-index: -100;
-    font-size: 13.25rem;
-    font-weight: bold;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: $secondary-color;
-  }
-  .subtitle {
-    position: relative;
-    color: $light-text-color;
-    padding-bottom: 50px;
-    font-weight: 200;
-    font-size: 3rem;
-  }
 }
