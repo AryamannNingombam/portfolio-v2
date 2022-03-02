@@ -2,4 +2,8 @@
 
 .navbarWrapper {
   margin-top: $landing-navbar-height;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

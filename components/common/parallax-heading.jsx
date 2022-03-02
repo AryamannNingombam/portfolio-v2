@@ -36,12 +36,12 @@ export default function ParallaxHeading({ title, subtitle }) {
       variants={container}
       className={Styles.mainDiv}
     >
-      <AnimatedHeading heading={title} />
       <AnimatedText
         type="heading2"
         text={subtitle}
         className={Styles.subtitle}
       />
+      <AnimatedHeading heading={title} />
     </motion.div>
   );
 }

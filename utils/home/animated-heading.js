@@ -20,7 +20,7 @@ export default function AnimatedHeading({ heading }) {
   let { ref, inView } = useInView();
   const [done, setDone] = useState(false);
   const parallax = useParallax({
-    speed: -20,
+    speed: 20,
   });
   ref = parallax.ref;
   useEffect(() => {

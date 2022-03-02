@@ -22,11 +22,11 @@ export default function AnimatedCharacters(props) {
   const item = {
     hidden: {
       y: "200%",
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 },
+      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.2 },
     },
     visible: {
       y: 0,
-      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 },
+      transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.2 },
     },
   };
 
@@ -62,6 +62,7 @@ export default function AnimatedCharacters(props) {
                     overflow: "hidden",
                     display: "inline-block",
                   }}
+                  anim
                   key={index}
                 >
                   <motion.span

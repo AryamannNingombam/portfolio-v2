@@ -1,0 +1,42 @@
+@import "../../variables";
+.mainDiv {
+  margin-top: -$landing-navbar-height;
+  font-family: $primary-font;
+  min-height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  .childDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .hi {
+      font-size: 5rem;
+      color: $light-text-color;
+      .bold {
+        font-weight: 400;
+      }
+    }
+    .description {
+      margin-top: 10px;
+      width: 70%;
+      color: $secondary-color;
+      font-size: 1.4rem;
+    }
+    .links {
+      padding-top: 30px;
+      display: flex;
+      width: 50%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .link {
+        color: $secondary-color;
+      }
+    }
+  }
+}
