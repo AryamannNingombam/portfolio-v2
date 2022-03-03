@@ -1,7 +1,3 @@
-export const INSTAGRAM_LINK = "https://www.instagram.com/ary_amann/";
-export const LINKEDIN_LINK = "https://www.linkedin.com/in/aryamann";
-export const GITHUB_LINK = "https://www.github.com/AryamannNingombam";
-
 const dist = -10;
 export const NAVBAR_LINKS = [
   {

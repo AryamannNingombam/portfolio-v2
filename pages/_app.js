@@ -4,6 +4,7 @@ import { useState } from "react";
 import TopBarProgress from "react-topbar-progress-indicator";
 import dynamic from "next/dynamic";
 import { ParallaxProvider } from "react-scroll-parallax";
+
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });

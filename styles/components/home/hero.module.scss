@@ -20,12 +20,28 @@
       .bold {
         font-weight: 400;
       }
+      .strikethrough:hover {
+        color: $secondary-color;
+      }
+      .strikethrough:after {
+        height: 5px;
+        margin-top: -2.7rem;
+        background: $secondary-color;
+      }
     }
     .description {
       margin-top: 10px;
       width: 70%;
       color: $secondary-color;
       font-size: 1.4rem;
+      .strikethrough:hover {
+        color: $light-text-color;
+      }
+      .strikethrough:after {
+        height: 1.4px;
+        margin-top: -0.7rem;
+        background: $light-text-color;
+      }
     }
     .links {
       padding-top: 30px;
@@ -38,5 +54,42 @@
         color: $secondary-color;
       }
     }
+  }
+}
+
+/* Strikethrough */
+
+.strikethrough {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.strikethrough:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  transform-origin: center left;
+  animation: strikethrough 1s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1;
+  transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.strikethrough:hover {
+  color: $secondary-color;
+}
+
+.strikethrough:hover:after {
+  transform: scaleX(0);
+  transform-origin: center right;
+}
+
+/* Keyframes for initial animation */
+
+@keyframes strikethrough {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
