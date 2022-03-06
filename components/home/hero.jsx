@@ -1,24 +1,35 @@
+import React from "react";
 import Styles from "styles/components/home/hero.module.scss";
 import HomeImage from "./image";
-import HeroTimeline from "components/home/hero/hero-timeline";
 import { BsInstagram, BsGithub, BsLinkedin, BsPaperclip } from "react-icons/bs";
+import MyImage from "assets/me/me.jpeg";
+import ManipalImage from "assets/me/manipal.jpeg";
 import Link from "next/link";
 export default function Hero() {
+  const [currentImage, setCurrentImage] = React.useState(null);
   return (
     <div className={Styles.mainDiv}>
       <div className={Styles.childDiv}>
-        <div className={Styles.hi}>Hi,</div>
+        <div className={Styles.hi}>Hello,</div>
         <div className={Styles.hi}>
           I&apos;m{" "}
-          <span className={`${Styles.bold} ${Styles.strikethrough}`}>
+          <div
+            onMouseEnter={() => setCurrentImage(MyImage)}
+            onMouseLeave={() => setCurrentImage(null)}
+            className={`${Styles.bold} ${Styles.strikethrough}`}
+          >
             Aryamann
-          </span>{" "}
+          </div>
         </div>
         <div className={Styles.description}>
           A full-stack developer, tech enthusiast, athlete, and an avid{" "}
           <span className={Styles.strikethrough}>reader</span> . Currently
           pursuing my Bachelor&apos;s(CSE) from{" "}
-          <span className={Styles.strikethrough}>
+          <span
+            onMouseEnter={() => setCurrentImage(ManipalImage)}
+            onMouseLeave={() => setCurrentImage(null)}
+            className={Styles.strikethrough}
+          >
             Manipal Institute Of Technology
           </span>{" "}
           , have changed more than{" "}
@@ -59,8 +70,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* <HomeImage /> */}
-      <HeroTimeline />
+      {currentImage && <HomeImage image={currentImage} />}
     </div>
   );
 }

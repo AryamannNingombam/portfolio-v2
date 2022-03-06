@@ -1,7 +1,11 @@
 .mainDiv {
+  position: absolute;
   width: 100%;
+  top: 20%;
+  left: 40%;
   .mainImage {
-    border-radius: 10px;
+    opacity: 0.3;
+    border-radius: 4px;
     object-fit: cover;
   }
 }

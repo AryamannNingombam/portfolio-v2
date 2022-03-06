@@ -1,0 +1,9 @@
+@import "../../variables";
+.mainDiv {
+  font-family: $primary-font;
+  margin-top: $landing-navbar-height;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

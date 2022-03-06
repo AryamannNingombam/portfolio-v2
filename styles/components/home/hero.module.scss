@@ -1,13 +1,9 @@
 @import "../../variables";
 .mainDiv {
-  margin-top: -$landing-navbar-height;
+  margin-top: $landing-navbar-height;
   font-family: $primary-font;
   min-height: 100vh;
   width: 70%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-weight: 200;
   .childDiv {
     display: flex;
@@ -19,6 +15,7 @@
       color: $light-text-color;
       .bold {
         font-weight: 400;
+        padding: 10px;
       }
       .strikethrough:hover {
         color: $secondary-color;
@@ -31,9 +28,9 @@
     }
     .description {
       margin-top: 10px;
-      width: 70%;
+      width: 100%;
       color: $secondary-color;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       .strikethrough:hover {
         color: $light-text-color;
       }
