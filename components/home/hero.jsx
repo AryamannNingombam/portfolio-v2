@@ -14,7 +14,7 @@ export default function Hero() {
         <div className={Styles.hi}>
           I&apos;m{" "}
           <div
-            onMouseEnter={() => setCurrentImage(MyImage)}
+            onMouseOver={() => setCurrentImage(MyImage)}
             onMouseLeave={() => setCurrentImage(null)}
             className={`${Styles.bold} ${Styles.strikethrough}`}
           >

@@ -13,6 +13,7 @@
     .hi {
       font-size: 5rem;
       color: $light-text-color;
+      width: fit-content;
       .bold {
         font-weight: 400;
         padding: 10px;
@@ -64,9 +65,9 @@
 
 .strikethrough:after {
   content: "";
+  width: 100%;
   position: absolute;
   display: block;
-  width: 100%;
   transform-origin: center left;
   animation: strikethrough 1s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1;
   transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
