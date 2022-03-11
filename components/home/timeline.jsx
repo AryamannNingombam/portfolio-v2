@@ -28,10 +28,13 @@ export default function Timeline() {
               <span className={Styles.light}> ( June 21 - December 21 )</span>
             </div>
             <div className={Styles.description}>
-              The first Ethereum based NFT platform in India. We are in talks
-              with national and international NFT buyers regarding our first
-              project, we&apos;ve cold-pitched our idea on Clubhouse, launched
-              our own podcast, and have been shortlisted for Shark Tank India.
+              <span>The first</span> Ethereum based NFT platform in{" "}
+              <span>India</span> . We are in talks with{" "}
+              <span>national and international NFT buyers</span> regarding our
+              first project, we&apos;ve{" "}
+              <span>cold-pitched our idea on Clubhouse,</span>
+              launched our own podcast, and have been{" "}
+              <span>shortlisted for Shark Tank India</span>(round 2).
             </div>
           </div>
         </div>
@@ -51,9 +54,11 @@ export default function Timeline() {
               <span className={Styles.light}>( Jan 22 - Present )</span>
             </div>
             <div className={Styles.description}>
-              Working as full-stack consultant at Spacenos, building the backend
-              using firebase functions, integrating with Stripe API, and
-              building the frontend for their web app.
+              Working as <span> full-stack consultant</span> at Spacenos,
+              building the backend using firebase functions, integrations with{" "}
+              <span>Stripe API, Quickblox, </span> and building the frontend for
+              their web app projects. Promoted from{" "}
+              <span>intern to consultant in 3 months.</span>
             </div>
           </div>
         </div>
@@ -73,8 +78,10 @@ export default function Timeline() {
               <span className={Styles.light}> ( Jan 22 - Present )</span>
             </div>
             <div className={Styles.description}>
-              Full-Stack developer at BugBase, mainly handling the backend and
-              integrations with the frontend, built on Node+TS & Nextjs
+              Full-Stack developer at BugBase, mainly{" "}
+              <span>handling the backend</span> and{" "}
+              <span> integrations with the frontend,</span> built on{" "}
+              <span> Node+TS & Nextjs</span>
             </div>
           </div>
         </div>

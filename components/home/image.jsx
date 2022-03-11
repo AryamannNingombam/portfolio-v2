@@ -14,7 +14,7 @@ const boxVariants = {
     },
   },
 };
-export default function HomeImage({ image }) {
+export default function HomeImage({ image, krypto }) {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -42,8 +42,9 @@ export default function HomeImage({ image }) {
       <Image
         src={image}
         layout="fixed"
-        width={370}
-        height={480}
+        width={krypto ? 500 : 380}
+        objectFit="cover"
+        height={500}
         alt="profile"
         className={Styles.mainImage}
       />
