@@ -18,7 +18,7 @@ export default function Projects() {
         <div className={Styles.project}>
           <Image alt="image" src={MoonnetImage} width={400} height={400} />
           <div className={Styles.text}>
-            <a href="https://kryptocards.tech" target="_blank">
+            <a rel="noreferrer" href="https://kryptocards.tech" target="_blank">
               <span className={Styles.heading}>kryptocards.tech </span>
             </a>
 
@@ -39,7 +39,7 @@ export default function Projects() {
             <Image alt="image" src={BugBaseImage} width={400} height={400} />
           </div>
           <div className={Styles.text}>
-            <a href="https://bugbase.in" target="_blank">
+            <a rel="noreferrer" href="https://bugbase.in" target="_blank">
               <span className={Styles.heading}>bugbase.in</span>
             </a>
 
@@ -128,7 +128,11 @@ export default function Projects() {
             <Image alt="image" src={MetaHackerImage} width={400} height={400} />
           </div>
           <div className={Styles.text}>
-            <a href="https://hackerz-prod.web.app" target="_blank">
+            <a
+              rel="noreferrer"
+              href="https://hackerz-prod.web.app"
+              target="_blank"
+            >
               {" "}
               <span className={Styles.heading}>hackerz-prod.web.app</span>
             </a>
@@ -144,7 +148,11 @@ export default function Projects() {
         <div className={Styles.project}>
           <Image alt="image" src={OutremoteLogo} width={300} height={100} />
           <div className={Styles.text}>
-            <a target="_blank" href="https://outremote.web.app">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://outremote.web.app"
+            >
               <span className={Styles.heading}>outremote.web.app </span>
             </a>
             <span className={Styles.subheading}>SPACENOS</span>
