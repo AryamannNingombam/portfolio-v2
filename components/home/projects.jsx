@@ -59,6 +59,7 @@ export default function Projects() {
           <Image alt="image" src={MrexImage} width={400} height={400} />
           <div className={Styles.text}>
             <a
+              rel="noreferrer"
               target="_blank"
               href="https://drive.google.com/file/d/12my-lOW0Akq6WjxMxbrurcZk_IOCIA-g/view"
             >
@@ -85,6 +86,7 @@ export default function Projects() {
           </div>
           <div className={Styles.text}>
             <a
+              rel="noreferrer"
               target="_blank"
               href="https://drive.google.com/file/d/1Va-TlFD3ab7K3gHOzlVY4Z-IFSk7lZKx/view"
             >
