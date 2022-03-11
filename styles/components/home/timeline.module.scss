@@ -1,0 +1,98 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: flex-start;
+  .mainHeading {
+    font-size: 4.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+  }
+  .timelineContainer {
+    width: 100%;
+    position: relative;
+    height: 36rem;
+    .timeLine {
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: #fff;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 20px;
+    }
+    .dot {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+    }
+
+    .dot1 {
+      left: 50%;
+      top: 20%;
+      transform: translate(-50%, -50%);
+    }
+
+    .dot2 {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .dot3 {
+      left: 50%;
+      top: 80%;
+      transform: translate(-50%, -50%);
+    }
+
+    .workTile {
+      position: absolute;
+      display: flex;
+      align-items: center;
+
+      width: 40rem;
+      .workDetails {
+        margin-left: 1rem;
+        .name {
+          font-size: 1.9rem;
+          font-weight: 500;
+          margin-bottom: 0.4rem;
+          margin-top: 0;
+        }
+        .designation {
+          font-size: 1rem;
+          color: aquamarine;
+          margin-bottom: 0.6rem;
+          font-weight: 500;
+          .light {
+            font-weight: 300;
+          }
+        }
+        .description {
+          font-size: 0.9rem;
+          font-weight: 300;
+          margin-bottom: 0.6rem;
+        }
+      }
+    }
+    .workTile1 {
+      left: calc(50% + 2rem);
+      top: 20%;
+      transform: translateY(-50%);
+    }
+
+    .workTile2 {
+      right: calc(50% + 2rem);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .workTile3 {
+      left: calc(50% + 2rem);
+      top: 80%;
+      transform: translateY(-50%);
+    }
+  }
+}

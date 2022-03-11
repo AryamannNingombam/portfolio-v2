@@ -1,0 +1,27 @@
+@import "../../variables";
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-family: $primary-font;
+  .headingDiv {
+    width: 100%;
+    text-align: start;
+  }
+  .timelineItem {
+    width: 40%;
+    background-color: red;
+    .timelineText {
+      display: flex;
+      flex-direction: column;
+      .title {
+        font-size: 2rem;
+        color: $light-text-color;
+        font-weight: medium;
+        //dont go to next line
+        white-space: nowrap;
+      }
+    }
+  }
+}

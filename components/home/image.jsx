@@ -40,7 +40,7 @@ export default function HomeImage({ image }) {
     >
       {" "}
       <Image
-        src={ME}
+        src={image}
         layout="fixed"
         width={370}
         height={480}

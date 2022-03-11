@@ -5,11 +5,9 @@ body {
   padding: 0;
   margin: 0;
   height: 100vh;
-  max-width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: $primary-bg;
-  scroll-behavior: smooth;
+  max-width: 100vw;
+  font-family: $primary-font;
+  background-color: $primary-bg !important;
   color: $light-text-color;
 }
 
