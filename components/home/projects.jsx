@@ -136,7 +136,8 @@ export default function Projects() {
             <span className={Styles.subheading}>SPACENOS</span>
             <p className={Styles.content}>
               A platform for users to <span>learn ethical hacking, </span>{" "}
-              delving into topics such as web exploitation, XSS attacks, etc.
+              delving into topics such as{" "}
+              <span>web exploitation, XSS attacks, etc.</span>
             </p>
           </div>
         </div>
@@ -150,8 +151,8 @@ export default function Projects() {
             <p className={Styles.content}>
               Outremote connects interns who are <span className="jae"></span>{" "}
               looking for industry level experience with companies working on
-              innovative ideas. Our platform provides growth hacks for
-              businesses to achieve their key objectives.
+              <span>innovative ideas.</span> Our platform provides growth hacks
+              for businesses to <span>achieve their key objectives.</span>
             </p>
           </div>
         </div>
