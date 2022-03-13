@@ -7,6 +7,7 @@ import ExamTantraImage from "assets/projects/examtantra/examtantra-logo.png";
 import AntimatterImage from "assets/projects/antimatter-web/antimatter-logo.png";
 import MetaHackerImage from "assets/projects/metahacker-admin/metahacker-admin-logo.png";
 import OutremoteLogo from "assets/projects/outremote-admin/outremote-logo.png";
+import SvayamLogo from "assets/projects/svayam/svayam-logo.png";
 import Image from "next/image";
 import Link from "next/link";
 export default function Projects() {
@@ -82,6 +83,33 @@ export default function Projects() {
           </div>
         </div>
         <div className={Styles.projectrev}>
+          <Image alt="image" src={SvayamLogo} width={400} height={400} />
+          <div className={Styles.text}>
+            <a
+              rel="noreferrer"
+              target="_blank"
+              href="https://drive.google.com/file/d/12my-lOW0Akq6WjxMxbrurcZk_IOCIA-g/view"
+            >
+              <span className={Styles.heading}>Svayam</span>
+            </a>
+
+            <span className={Styles.subheading}>
+              SMART INDIA HACKATHON (2022)
+            </span>
+            <p className={Styles.content}>
+              <span>One of the first </span> applications to use the concept of
+              <span> decentralization and web3</span> to store medical records
+              of a user, in a safe way.
+              <span> Our aim </span>
+              is to revolutionalize the way medical records are stored and
+              shared between users by decentralizing the process. All the data
+              would be <span> stored in IPFS </span> encrypted on our backend to
+              make sure that only{" "}
+              <span>authenticated users can access the data.</span>
+            </p>
+          </div>
+        </div>
+        <div className={Styles.project}>
           <div styles={Styles.image}>
             <Image alt="image" src={ExamTantraImage} width={400} height={400} />
           </div>
@@ -109,7 +137,7 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className={Styles.project}>
+        <div className={Styles.projectrev}>
           <Image alt="image" src={AntimatterImage} width={300} height={100} />
           <div className={Styles.text}>
             <span className={Styles.heading}>antimatterlabs.in </span>
@@ -126,7 +154,7 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className={Styles.projectrev}>
+        <div className={Styles.project}>
           <div styles={Styles.image}>
             <Image alt="image" src={MetaHackerImage} width={400} height={400} />
           </div>
@@ -148,7 +176,7 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className={Styles.project}>
+        <div className={Styles.projectrev}>
           <Image alt="image" src={OutremoteLogo} width={300} height={100} />
           <div className={Styles.text}>
             <a
