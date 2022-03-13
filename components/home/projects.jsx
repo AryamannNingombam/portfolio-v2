@@ -8,9 +8,10 @@ import AntimatterImage from "assets/projects/antimatter-web/antimatter-logo.png"
 import MetaHackerImage from "assets/projects/metahacker-admin/metahacker-admin-logo.png";
 import OutremoteLogo from "assets/projects/outremote-admin/outremote-logo.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function Projects() {
   return (
-    <div className={Styles.mainDiv}>
+    <div id="projects" className={Styles.mainDiv}>
       <div className={Styles.headingDiv}>
         <MainHeading heading={"Projects"} />
       </div>
@@ -18,9 +19,9 @@ export default function Projects() {
         <div className={Styles.project}>
           <Image alt="image" src={MoonnetImage} width={400} height={400} />
           <div className={Styles.text}>
-            <a rel="noreferrer" href="https://kryptocards.tech" target="_blank">
+            <Link href="/projects/krypto-cards">
               <span className={Styles.heading}>kryptocards.tech </span>
-            </a>
+            </Link>
 
             <span className={Styles.subheading}>KRYPTO CARDS</span>
             <p className={Styles.content}>

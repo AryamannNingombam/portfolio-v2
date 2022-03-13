@@ -5,7 +5,7 @@ import SpacenosLogo from "assets/projects/spacenos-small-logo.png";
 import Image from "next/image";
 export default function Timeline() {
   return (
-    <div className={Styles.mainDiv}>
+    <section id="timeline" className={Styles.mainDiv}>
       <div className={Styles.mainHeading}>Work Experience</div>
       <div className={Styles.timelineContainer}>
         <div className={Styles.timeLine} />
@@ -86,6 +86,6 @@ export default function Timeline() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

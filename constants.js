@@ -7,7 +7,7 @@ export const NAVBAR_LINKS = [
   },
   {
     name: "Work",
-    link: "#work",
+    link: "#timeline",
     distance: dist * 4,
   },
   {
@@ -17,12 +17,12 @@ export const NAVBAR_LINKS = [
   },
   {
     name: "Clubs",
-    link: "#clubs",
+    link: "#leaderships",
     distance: dist * 2,
   },
   {
     name: "Awards",
-    link: "#awards",
+    link: "#achievements",
     distance: dist * 1,
   },
 ];

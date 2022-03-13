@@ -3,7 +3,6 @@ import router from "next/router";
 import { useState } from "react";
 import TopBarProgress from "react-topbar-progress-indicator";
 import dynamic from "next/dynamic";
-import SmoothScroll from "components/common/smooth-scroll";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -38,6 +37,7 @@ function MyApp({ Component, pageProps }) {
   });
   return (
     <>
+      {/* <SmoothScroll />  */}
       <AnimatedCursor
         innerSize={8}
         outerSize={30}
@@ -48,7 +48,6 @@ function MyApp({ Component, pageProps }) {
       />
       {progress && <TopBarProgress />}
       <Component {...pageProps} />
-      {/* <SmoothScroll /> */}
     </>
   );
 }

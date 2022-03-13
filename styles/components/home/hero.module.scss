@@ -14,6 +14,12 @@
       font-size: 5rem;
       color: $light-text-color;
       width: fit-content;
+      @include responsive(f1) {
+        font-size: 4.5rem;
+      }
+      @include responsive(f2) {
+        font-size: 4rem;
+      }
       .bold {
         font-weight: 500;
         padding: 10px;
@@ -50,6 +56,10 @@
       justify-content: space-between;
       .link {
         color: $secondary-color;
+        transition: 0.2s ease-in-out;
+        &:hover {
+          color: $light-text-color;
+        }
       }
     }
   }

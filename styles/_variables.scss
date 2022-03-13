@@ -4,68 +4,13 @@ $light-text-color: #ffffff;
 $dark-text-color: #181818;
 $primary-font: "Inter", sans-serif;
 @mixin responsive($breakpoint) {
-  @if $breakpoint==desktop {
-    @media only screen and (min-width: 1780px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==laptop2 {
-    @media only screen and (max-width: 1400px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==laptop1 {
-    @media only screen and (max-width: 1200px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==tablet4 {
-    @media only screen and (max-width: 992px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==tablet3 {
+  @if $breakpoint==f1 {
     @media only screen and (max-width: 768px) {
       @content;
     }
   }
-
-  @if $breakpoint==tablet2 {
-    @media only screen and (max-width: 640px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==tablet1 {
-    @media only screen and (max-width: 576px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==mobile4 {
-    @media only screen and (max-width: 480px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==mobile3 {
-    @media only screen and (max-width: 420px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==mobile2 {
-    @media only screen and (max-width: 376px) {
-      @content;
-    }
-  }
-
-  @if $breakpoint==mobile1 {
-    @media only screen and (max-width: 320px) {
+  @if $breakpoint==f2 {
+    @media only screen and (max-width: 650px) {
       @content;
     }
   }
@@ -75,4 +20,4 @@ $primary-font: "Inter", sans-serif;
 $landing-navbar-height: 80px;
 
 // Max width of the container
-$container-max-width: 1400px;
+// $container-max-width: 1400px;

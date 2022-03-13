@@ -13,7 +13,7 @@ import Link from "next/link";
 export default function Hero() {
   const [currentImage, setCurrentImage] = React.useState(null);
   return (
-    <div className={Styles.mainDiv}>
+    <section id="home" className={Styles.mainDiv}>
       <div className={Styles.childDiv}>
         <div className={Styles.hi}>Hello,</div>
         <div className={Styles.hi}>
@@ -108,6 +108,6 @@ export default function Hero() {
       {currentImage && (
         <HomeImage image={currentImage} krypto={currentImage === KryptoImage} />
       )}
-    </div>
+    </section>
   );
 }
