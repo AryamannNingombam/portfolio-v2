@@ -6,22 +6,23 @@ export default function Achievements() {
       <ul className={Styles.list}>
         <li className={Styles.listItem}>
           <span className={Styles.color}>Shortlisted</span> for representing
-          college in Smart India Hackathon(2022).
+          college in <span>Smart India Hackathon(2022).</span>
         </li>
         <li className={Styles.listItem}>
-          <span className={Styles.color}> Winner</span> in RevaHack (2021-22).
+          <span className={Styles.color}> Winner</span> in RevaHack{" "}
+          <span>(2021-22).</span>
         </li>
         <li className={Styles.listItem}>
           <span className={Styles.color}> Runner up</span> in Hack-O-Wasp 3.0
-          (TIET) (2020-21).
+          <span> (TIET) (2020-21)</span>
         </li>
         <li className={Styles.listItem}>
           <span className={Styles.color}> Winner</span> in Command Level
-          Badminton Championship (APS Mhow) (2017-18).
+          Badminton Championship <span> (APS Mhow) (2017-18).</span>
         </li>
         <li className={Styles.listItem}>
-          <span> Runner up</span> in Cluster Level Badminton Championship (APS
-          Mhow) (2017-18).
+          <span> Runner up</span> in Cluster Level Badminton Championship
+          <span> (APS Mhow) (2017-18).</span>
         </li>
         <li className={Styles.listItem}>
           <span> Winner</span> in Intra-School Badminton Matches{" "}
