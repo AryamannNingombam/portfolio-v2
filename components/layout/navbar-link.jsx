@@ -72,7 +72,7 @@ export default function NavbarLink({ value }) {
             top: 0,
           });
         } else {
-          document.querySelector(value.link).scrollIntoView({
+          document.querySelector(value.link.slice(1)).scrollIntoView({
             behavior: "smooth",
           });
         }

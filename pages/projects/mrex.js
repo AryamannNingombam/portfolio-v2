@@ -109,7 +109,11 @@ export default function MrexProject() {
           <div className={styles.links}>
             <div className={styles.section}>
               <div>
-                <a href="https://bugbase.in" target="_blank" rel="noreferrer">
+                <a
+                  href="https://drive.google.com/file/d/12my-lOW0Akq6WjxMxbrurcZk_IOCIA-g/view"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   download here
                 </a>
               </div>

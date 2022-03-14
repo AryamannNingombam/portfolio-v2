@@ -41,9 +41,9 @@ export default function Projects() {
             <Image alt="image" src={BugBaseImage} width={400} height={400} />
           </div>
           <div className={Styles.text}>
-            <a rel="noreferrer" href="https://bugbase.in" target="_blank">
+            <Link rel="noreferrer" href="/projects/bugbase" target="_blank">
               <span className={Styles.heading}>bugbase.in</span>
-            </a>
+            </Link>
 
             <span className={Styles.subheading}>BUGBASE</span>
             <p className={Styles.content}>
@@ -60,13 +60,9 @@ export default function Projects() {
         <div className={Styles.project}>
           <Image alt="image" src={MrexImage} width={400} height={400} />
           <div className={Styles.text}>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://drive.google.com/file/d/12my-lOW0Akq6WjxMxbrurcZk_IOCIA-g/view"
-            >
+            <Link href="/projects/mrex">
               <span className={Styles.heading}>MRex</span>
-            </a>
+            </Link>
 
             <span className={Styles.subheading}>REVAHACK</span>
             <p className={Styles.content}>
@@ -85,13 +81,9 @@ export default function Projects() {
         <div className={Styles.projectrev}>
           <Image alt="image" src={SvayamLogo} width={400} height={400} />
           <div className={Styles.text}>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://drive.google.com/file/d/12my-lOW0Akq6WjxMxbrurcZk_IOCIA-g/view"
-            >
+            <Link href="/projects/svayam">
               <span className={Styles.heading}>Svayam</span>
-            </a>
+            </Link>
 
             <span className={Styles.subheading}>
               SMART INDIA HACKATHON (2022)
@@ -114,13 +106,9 @@ export default function Projects() {
             <Image alt="image" src={ExamTantraImage} width={400} height={400} />
           </div>
           <div className={Styles.text}>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://drive.google.com/file/d/1Va-TlFD3ab7K3gHOzlVY4Z-IFSk7lZKx/view"
-            >
+            <Link href="/projects/examtantra">
               <span className={Styles.heading}>ExamTantra</span>
-            </a>
+            </Link>
 
             <span className={Styles.subheading}>HACKOWASP 3.0</span>
             <p className={Styles.content}>
@@ -140,7 +128,9 @@ export default function Projects() {
         <div className={Styles.projectrev}>
           <Image alt="image" src={AntimatterImage} width={300} height={100} />
           <div className={Styles.text}>
-            <span className={Styles.heading}>antimatterlabs.in </span>
+            <Link href="/projects/antimatter-web">
+              <span className={Styles.heading}>antimatterlabs.in </span>
+            </Link>
             <span className={Styles.subheading}>ANTIMATTER LABS</span>
             <p className={Styles.content}>
               <span>An ecommerce platform</span> for users to buy and sell
@@ -159,15 +149,9 @@ export default function Projects() {
             <Image alt="image" src={MetaHackerImage} width={400} height={400} />
           </div>
           <div className={Styles.text}>
-            <a
-              rel="noreferrer"
-              href="https://hackerz-prod.web.app"
-              target="_blank"
-            >
-              {" "}
+            <Link href="/projects/metahacker-admin">
               <span className={Styles.heading}>hackerz-prod.web.app</span>
-            </a>
-
+            </Link>
             <span className={Styles.subheading}>SPACENOS</span>
             <p className={Styles.content}>
               A platform for users to <span>learn ethical hacking, </span>{" "}
@@ -179,13 +163,9 @@ export default function Projects() {
         <div className={Styles.projectrev}>
           <Image alt="image" src={OutremoteLogo} width={300} height={100} />
           <div className={Styles.text}>
-            <a
-              rel="noreferrer"
-              target="_blank"
-              href="https://outremote.web.app"
-            >
+            <Link href="/projects/outremote">
               <span className={Styles.heading}>outremote.web.app </span>
-            </a>
+            </Link>
             <span className={Styles.subheading}>SPACENOS</span>
             <p className={Styles.content}>
               Outremote connects interns who are <span className="jae"></span>{" "}

@@ -1,17 +1,16 @@
 import NavbarWrapper from "components/common/navbar-wrapper";
 import Image from "next/image";
 import styles from "styles/components/common/project.module.scss";
-import AntimatterMainLogo from "assets/projects/antimatter-web/antimatter-big-logo.png";
-import MainImage1 from "assets/projects/antimatter-web/main-image-1.png";
-import MainImage2 from "assets/projects/antimatter-web/main-image-2.png";
-import MainImage3 from "assets/projects/antimatter-web/main-image-3.png";
-export default function AntimatterWebProject() {
+import SvayamMainLogo from "assets/projects/svayam/svayam-big-logo.png";
+import MainImage2 from "assets/projects/svayam/main-image-2.png";
+import MainImage3 from "assets/projects/svayam/main-image-3.png";
+export default function BugbaseProject() {
   return (
     <NavbarWrapper>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
-          <h1 className={styles.heading}>Antimatter Web</h1>
-          <h2 className={styles.subheading}>ANTIMATTER LABS</h2>
+          <h1 className={styles.heading}>Svayam</h1>
+          <h2 className={styles.subheading}>SMART INDIA HACKATHON(2022)</h2>
         </div>
         <div className={styles.descriptionSection}>
           <div className={styles.description}>
@@ -35,19 +34,22 @@ export default function AntimatterWebProject() {
             </p>
           </div>
           <div className={styles.image}>
-            <Image
-              height={4000}
-              width={4000}
-              alt="g"
-              src={AntimatterMainLogo}
-            />
+            <Image height={4000} width={4000} alt="g" src={SvayamMainLogo} />
           </div>
         </div>
         <div className={styles.mainImage}>
-          <Image src={MainImage1} alt="f" />
+          <iframe
+            width="1100"
+            height="700"
+            src="https://www.youtube.com/embed/maI5PTvtnmY"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
         <div className={styles.aboutMoonnets}>
-          <h2 className={styles.aboutMoonnetsHeading}>About Antimatter Web</h2>
+          <h2 className={styles.aboutMoonnetsHeading}>About Svayam</h2>
           <div className={styles.description}>
             <p>
               A realm, breathed to life, colossal yet the most oblivious one.
@@ -99,12 +101,8 @@ export default function AntimatterWebProject() {
           <div className={styles.links}>
             <div className={styles.section}>
               <div>
-                <a
-                  href="https://kryptocards.tech"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  project
+                <a href="https://bugbase.in" target="_blank" rel="noreferrer">
+                  project here
                 </a>
               </div>
 
@@ -112,8 +110,9 @@ export default function AntimatterWebProject() {
             </div>
             <div className={styles.section}>
               <div className={styles.row}>
-                <div>node+ts</div>
-                <div>react</div>
+                <div>node</div>
+                <div>nextjs</div>
+                <div>ipfs</div>
                 <div>razorpay</div>
               </div>
               <span>tech stack</span>
