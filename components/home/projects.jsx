@@ -163,7 +163,7 @@ export default function Projects() {
         <div className={Styles.projectrev}>
           <Image alt="image" src={OutremoteLogo} width={300} height={100} />
           <div className={Styles.text}>
-            <Link href="/projects/outremote">
+            <Link href="/projects/outremote-admin">
               <span className={Styles.heading}>outremote.web.app </span>
             </Link>
             <span className={Styles.subheading}>SPACENOS</span>
