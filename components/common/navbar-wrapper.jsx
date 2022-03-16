@@ -5,6 +5,9 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 export default function NavbarWrapper({ children }) {
   const scrollingContainer = useRef();
+  // scrollingContainer.current.scrollIntoView({
+  //   behavior: "smooth",
+  // });
   return (
     <>
       <Navbar />

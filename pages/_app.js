@@ -30,6 +30,10 @@ function MyApp({ Component, pageProps }) {
   router.events.on("routeChangeStart", () => {
     setProgress(true);
     //when route change starts;
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
   });
   router.events.on("routeChangeComplete", () => {
     setProgress(false);
