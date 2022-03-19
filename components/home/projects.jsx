@@ -84,20 +84,19 @@ export default function Projects() {
             <Link href="/projects/svayam">
               <span className={Styles.heading}>Svayam</span>
             </Link>
-
             <span className={Styles.subheading}>
               SMART INDIA HACKATHON (2022)
             </span>
             <p className={Styles.content}>
-              <span>One of the first </span> applications to use the concept of
-              <span> decentralization and web3</span> to store medical records
-              of a user, in a safe way.
-              <span> Our aim </span>
-              is to revolutionalize the way medical records are stored and
-              shared between users by decentralizing the process. All the data
-              would be <span> stored in IPFS </span> encrypted on our backend to
-              make sure that only{" "}
-              <span>authenticated users can access the data.</span>
+              A product for SHGs to <span> connect with the world </span>
+              through a platform that would help them to{" "}
+              <span> connect with customers </span>
+              to sell their product, and also to{" "}
+              <span> connect with the government </span>
+              for various programs that are available to them. We have been{" "}
+              <span> shortlisted for the main hackathon </span>
+              and would be <span> representing our college </span>
+              in the final round.
             </p>
           </div>
         </div>

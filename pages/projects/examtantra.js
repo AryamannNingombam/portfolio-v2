@@ -102,22 +102,23 @@ export default function ExamtantraProject() {
           <h2 className={styles.aboutMoonnetsHeading}>My Role</h2>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              As this was <span>my first Hackathon,</span> and the tech stack
+              that we were using was really new for us{" "}
+              <span>(Ionic for the app)</span>. Only one out of the four of us
+              had previous experience in hackathons, and{" "}
+              <span> we did not have much idea </span> on how things are{" "}
+              <span> done in a hackathon. </span>
             </p>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              I had mainly made the frontend using{" "}
+              <span> Ionic and React, </span> where we worked with Typescript, a
+              language that we had never worked with. We had used firebase to
+              make the backend, and had prepared a{" "}
+              <span> proper product roadmap </span>.
+            </p>
+            <p>
+              We pitched pur product on the final day, fortunately, we had
+              secured the <span>second rank in the competition.</span>
             </p>
           </div>
         </div>

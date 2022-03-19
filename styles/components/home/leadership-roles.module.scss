@@ -1,3 +1,4 @@
+@import "../../variables";
 .mainDiv {
   width: 80%;
   margin-top: 50px;
@@ -9,12 +10,33 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    margin: 100px 0;
     .topic {
+      border-radius: 50%;
       margin: 40px;
-      width: 400px;
+      width: 300px;
       height: 300px;
-      background-color: grey;
+      text-align: center;
+      line-height: 40px;
+      img {
+        border-radius: 50%;
+      }
+      .topicHeading {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $light-text-color;
+        transition: 0.3s ease;
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+      .subheading {
+        color: $secondary-color;
+        font-weight: 300;
+        font-size: 1.1rem;
+      }
     }
   }
 }

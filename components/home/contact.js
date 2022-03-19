@@ -13,8 +13,9 @@ export default function Contact() {
         <a href="mailto:aryamannsinghningombam@gmail.com">
           <span>aryamannsinghningombam@gmail.com.</span>
         </a>
-        You can also use this link to connect with me in other social media
-        platforms. Hope to build something new and great with you soon :).
+        You can also use this link to <span> connect with me </span>in other
+        social media platforms. Hope to <span> build something new </span>and
+        great with you soon :).
       </p>
     </section>
   );

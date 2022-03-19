@@ -17,7 +17,6 @@ const boxVariants = {
 export default function HomeImage({ image, krypto }) {
   const controls = useAnimation();
   const { ref, inView } = useInView();
-
   const [done, setDone] = React.useState(false);
   React.useEffect(() => {
     if (!done) {
@@ -46,7 +45,6 @@ export default function HomeImage({ image, krypto }) {
         objectFit="cover"
         height={500}
         alt="profile"
-        className={Styles.mainImage}
       />
     </motion.div>
   );
