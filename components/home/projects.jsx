@@ -88,7 +88,8 @@ export default function Projects() {
               SMART INDIA HACKATHON (2022)
             </span>
             <p className={Styles.content}>
-              A product for SHGs to <span> connect with the world </span>
+              An ecommerce platform for SHGs to{" "}
+              <span> connect with the world </span>
               through a platform that would help them to{" "}
               <span> connect with customers </span>
               to sell their product, and also to{" "}

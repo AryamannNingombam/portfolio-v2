@@ -4,63 +4,74 @@ $hamburger-height: 3px;
 $hamburger-width: 40px;
 $hamburger-distance: 13px;
 .navbarMenuButton {
-  z-index: 1000;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-top: 20px;
-  width: 95%;
+  width: 100%;
   height: $landing-navbar-height;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  .linkContainer {
+  .image {
+    margin-left: 40px;
+    z-index: 1000;
+  }
+  .navbar {
     display: flex;
     flex-direction: row;
-    .item.mainText {
-      color: $secondary-color !important;
-      cursor: pointer;
-      font-size: 1.3rem;
-      font-weight: 600;
+    align-items: center;
+    .linkContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .item.mainText {
+        color: $secondary-color !important;
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: 600;
+      }
     }
-  }
-  .open.menuButtonBurger {
-    transform: translateX(-50px);
-    box-shadow: none;
-    background: transparent;
-    &::before {
-      transform: rotate(45deg) translate(35px, -35px);
+    .open.menuButtonBurger {
+      transform: translateX(-50px);
+      box-shadow: none;
+      background: transparent;
+      &::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+      &::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
     }
-    &::after {
-      transform: rotate(-45deg) translate(35px, 35px);
-    }
-  }
-  .menuButtonBurger {
-    width: $hamburger-width;
-    height: $hamburger-height;
-    background: $secondary-color;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 2px 5px rgba(47, 255, 217, 0.2);
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
+    .menuButtonBurger {
+      margin-right: 40px;
       width: $hamburger-width;
       height: $hamburger-height;
       background: $secondary-color;
       border-radius: 5px;
       transition: all 0.2s ease-in-out;
-    }
-    &::before {
-      transform: translateY(-$hamburger-distance);
       box-shadow: 0 2px 5px rgba(47, 255, 217, 0.2);
-    }
-    &::after {
-      transform: translateY($hamburger-distance);
-      box-shadow: 0 2px 5px rgba(47, 255, 217, 0.2);
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: $hamburger-width;
+        height: $hamburger-height;
+        background: $secondary-color;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+      }
+      &::before {
+        transform: translateY(-$hamburger-distance);
+        box-shadow: 0 2px 5px rgba(47, 255, 217, 0.2);
+      }
+      &::after {
+        transform: translateY($hamburger-distance);
+        box-shadow: 0 2px 5px rgba(47, 255, 217, 0.2);
+      }
     }
   }
 }

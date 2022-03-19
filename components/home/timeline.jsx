@@ -3,6 +3,7 @@ import KryptoCardsLogo from "assets/projects/krypto-cards/krypto-cards-small-log
 import BugBaseLogo from "assets/projects/bugbase/bugbase-small-logo.png";
 import SpacenosLogo from "assets/projects/spacenos-small-logo.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function Timeline() {
   return (
     <section id="timeline" className={Styles.mainDiv}>
@@ -22,7 +23,9 @@ export default function Timeline() {
             className={Styles.workImage}
           />
           <div className={Styles.workDetails}>
-            <h3 className={Styles.name}>Krypto Cards</h3>
+            <a target="_blank" rel="noreferrer" href="https://kryptocards.tech">
+              Krypto Cards
+            </a>
             <div className={Styles.designation}>
               CO-FOUNDER & COO
               <span className={Styles.light}> ( June 21 - December 21 )</span>
@@ -48,7 +51,9 @@ export default function Timeline() {
             className={Styles.workImage}
           />
           <div className={Styles.workDetails}>
-            <h3 className={Styles.name}>Spacenos</h3>
+            <a target="_blank" rel="noreferrer" href="https://spacenos.com">
+              Spacenos
+            </a>
             <div className={Styles.designation}>
               DEV CONSULTANT{" "}
               <span className={Styles.light}>( Jan 22 - Present )</span>
@@ -72,7 +77,9 @@ export default function Timeline() {
             className={Styles.workImage}
           />
           <div className={Styles.workDetails}>
-            <h3 className={Styles.name}>BugBase</h3>
+            <a target="_blank" rel="noreferrer" href="https://bugbase.in">
+              BugBase
+            </a>
             <div className={Styles.designation}>
               FULL-STACK DEVELOPER
               <span className={Styles.light}> ( Jan 22 - Present )</span>

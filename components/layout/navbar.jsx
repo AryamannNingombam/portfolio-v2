@@ -3,6 +3,9 @@ import Styles from "styles/components/layout/navbar.module.scss";
 import { motion } from "framer-motion";
 import { NAVBAR_LINKS } from "constants";
 import NavbarLink from "./navbar-link";
+import Image from "next/image";
+import Logo from "assets/me/logo.png";
+import Link from "next/link";
 
 const container = {
   hidden: {
@@ -21,12 +24,16 @@ const container = {
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <>
-      {" "}
-      <div
-        onClick={() => setMenuOpen((previous) => !previous)}
-        className={`${Styles.navbarMenuButton}`}
-      >
+    <div
+      onClick={() => setMenuOpen((previous) => !previous)}
+      className={`${Styles.navbarMenuButton}`}
+    >
+      <div className={Styles.image}>
+        <Link href="/">
+          <Image src={Logo} height={50} width={50} />
+        </Link>
+      </div>
+      <div className={Styles.navbar}>
         {menuOpen && (
           <motion.ul
             className={Styles.linkContainer}
@@ -45,6 +52,6 @@ export default function Navbar() {
           }`}
         ></div>
       </div>
-    </>
+    </div>
   );
 }

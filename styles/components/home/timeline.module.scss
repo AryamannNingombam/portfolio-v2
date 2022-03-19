@@ -56,13 +56,18 @@
       width: 40rem;
       .workDetails {
         margin-left: 1rem;
-        .name {
-          font-size: 1.9rem;
-          font-weight: 500;
-          margin-bottom: 0.4rem;
-          margin-top: 0;
-          text-decoration: none;
+        a {
+          color: $light-text-color;
+          font-size: 1.9rem !important;
+          font-weight: 500 !important;
+          margin-bottom: 0.4rem !important;
+          margin-top: 0 !important;
+          transition: 0.3s ease;
+          &:hover {
+            color: $secondary-color;
+          }
         }
+
         .designation {
           font-size: 1rem;
           color: aquamarine;
@@ -78,6 +83,10 @@
           margin-bottom: 0.6rem;
           span {
             font-weight: 500;
+            transition: 0.3s ease;
+            &:hover {
+              color: $secondary-color;
+            }
           }
         }
       }
