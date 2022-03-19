@@ -15,13 +15,9 @@ export default function BugbaseProject() {
         <div className={styles.descriptionSection}>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              Svayam is a web application that helps the farmers to manage their
+              farms. It is a web application that helps the farmers to manage
+              their farms. It is a web application that helps the farmers
             </p>
             <p>
               A realm, breathed to life, colossal yet the most oblivious one.

@@ -78,30 +78,34 @@ export default function Hero() {
           .
         </div>
         <div className={Styles.links}>
-          <Link
-            target={"_blank"}
-            passHref={true}
-            href={"https://github.com/AryamannNingombam"}
-          >
-            <BsGithub size={30} className={Styles.link} />
-          </Link>
-          <Link
-            target={"_blank"}
-            passHref={true}
-            href={"https://linkedin.com/in/aryamann"}
-          >
-            <BsLinkedin size={30} className={Styles.link} />
-          </Link>
-          <Link
-            target={"_blank"}
-            passHref={true}
-            href={"https://instagram.com/ary_amann"}
-          >
-            <BsInstagram size={30} className={Styles.link} />
-          </Link>
-          <Link href="/resume.pdf">
-            <BsPaperclip size={30} className={Styles.link} />
-          </Link>
+          <div className={Styles.left}>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href={"https://github.com/AryamannNingombam"}
+            >
+              <BsGithub size={30} className={Styles.link} />
+            </a>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href={"https://linkedin.com/in/aryamann"}
+            >
+              <BsLinkedin size={30} className={Styles.link} />
+            </a>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href={"https://instagram.com/ary_amann"}
+            >
+              <BsInstagram size={30} className={Styles.link} />
+            </a>
+          </div>
+          <div className={Styles.right}>
+            <Link passHref={true} className={Styles.resume} href="/resume.pdf">
+              <BsPaperclip size={30} className={Styles.link} />
+            </Link>
+          </div>
         </div>
       </div>
 

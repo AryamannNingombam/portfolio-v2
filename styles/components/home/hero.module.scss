@@ -51,15 +51,36 @@
     .links {
       padding-top: 30px;
       display: flex;
-      width: 50%;
+      width: 100%;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      .link {
-        color: $secondary-color;
-        transition: 0.2s ease-in-out;
-        &:hover {
-          color: $light-text-color;
+      .right {
+        justify-content: flex-end;
+        .resume {
+          color: $secondary-color;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: $light-text-color;
+          }
+        }
+      }
+      .left {
+        justify-content: flex-start;
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        a {
+          .link {
+            margin-right: 10rem;
+            color: $secondary-color;
+            transition: 0.2s ease-in-out;
+            &:hover {
+              color: $light-text-color;
+            }
+          }
         }
       }
     }
