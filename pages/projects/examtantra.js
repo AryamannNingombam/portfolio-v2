@@ -16,22 +16,29 @@ export default function ExamtantraProject() {
         <div className={styles.descriptionSection}>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              ExamTantra’s goal is to <span>“Gamify” the mundane tasks</span> of
+              attempting exams by adding elements such as peer attempts:{" "}
+              <span>
+                solving papers with peers resulting in a more productive
+                practice environment
+              </span>{" "}
+              , leaderboards to compare progress,{" "}
+              <span>a clean minimal UI so as to not distract the user</span> ,
+              badges, awards and other reinforcements{" "}
+              <span>
+                {" "}
+                which have been proven to be psychological motivators.
+              </span>
             </p>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              We believe that{" "}
+              <span> everyone must have the right to a fair education,</span>
+              thus, ExamTantra aims to make practicing more accessible to
+              students by{" "}
+              <span>
+                offering an ad free uninterrupted experience as well as being
+                optimised to run on most devices.
+              </span>
             </p>
           </div>
           <div className={styles.image}>
@@ -50,22 +57,41 @@ export default function ExamtantraProject() {
           <h2 className={styles.aboutMoonnetsHeading}>About Examtantra</h2>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              Competitive exams are a cornerstone in almost every student’s
+              life. There are <span>two purposes for competitive exams;</span>{" "}
+              at school and college, they encourage students to study by
+              <span>
+                rewarding those who demonstrate the will to learn with
+                reputation,
+              </span>
+              prizes, admissions to universities and scholarships. They&apos;re
+              also used in the selection of military and civil service officers.
+              This makes{" "}
+              <span>
+                {" "}
+                success in these exams very lucrative, attracting many students.
+              </span>
             </p>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              However the archaic education system makes the preparation process
+              very tedious, boring and unintuitive. This leads to{" "}
+              <span>
+                {" "}
+                burnout and a general disinterest towards academics.{" "}
+              </span>{" "}
+              This system is also inefficient as it doesn&apos;t have room for a
+              dynamic system of preparation. Another issue that presented itself
+              in the current, unprecedented times is that{" "}
+              <span>
+                {" "}
+                education has to evolve beyond brick and mortar institutions to
+                function and thrive.
+              </span>
+              The sudden rise in solutions implementing technology into
+              education is no coincidence. As we are forced to look for
+              alternatives to conventional learning methods, we have to{" "}
+              <span> find efficient and innovative methods </span> so as to keep
+              improving the quality of education.
             </p>
           </div>
         </div>
@@ -99,7 +125,11 @@ export default function ExamtantraProject() {
           <div className={styles.links}>
             <div className={styles.section}>
               <div>
-                <a href="https://bugbase.in" target="_blank" rel="noreferrer">
+                <a
+                  href="https://drive.google.com/file/d/1Va-TlFD3ab7K3gHOzlVY4Z-IFSk7lZKx/view"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   download here
                 </a>
               </div>

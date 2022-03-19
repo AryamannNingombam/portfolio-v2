@@ -4,9 +4,14 @@ import styles from "styles/components/common/project.module.scss";
 import BugbaseMainLogo from "assets/projects/bugbase/bugbase-big-logo.png";
 import MainImage2 from "assets/projects/bugbase/main-image-2.png";
 import MainImage3 from "assets/projects/bugbase/main-image-3.png";
+import Head from "next/head";
 export default function BugbaseProject() {
   return (
     <NavbarWrapper>
+      <Head>
+        <title>bugbase.in - Aryamann Ningombam</title>
+        <meta content="This is BugBase, one of the projects of Aryamann Ningombam." />
+      </Head>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
           <h1 className={styles.heading}>bugbase.in</h1>
@@ -15,22 +20,21 @@ export default function BugbaseProject() {
         <div className={styles.descriptionSection}>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              BugBase is India&apos;s{" "}
+              <span>first consolidated bug bounty platform,</span>
+              that aims to{" "}
+              <span>connect companies with bug bounty hunters.</span> It is a
+              SaaS platform that allows companies to{" "}
+              <span> post bug bounties </span>and get bug bounty hunters to
+              submit bug reports.
             </p>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              BugBase is a startup that began with a{" "}
+              <span> simple idea for a hackathon </span>
+              by two school students, but now has become one of the{" "}
+              <span> fastest growing startups in our country, </span>with
+              mentions from various platforms such as{" "}
+              <span> timesofindia, portswigger, etc. </span>
             </p>
           </div>
           <div className={styles.image}>
@@ -52,22 +56,31 @@ export default function BugbaseProject() {
           <h2 className={styles.aboutMoonnetsHeading}>About Bugbase</h2>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              BugBase is an <span>Indian platform</span> that enables companies
+              to set up <span>bug bounty programs</span> that can be reached out
+              to by ethical hackers and cybersecurity enthusiasts from all over
+              the country. Bug bounty programs are a way to{" "}
+              <span>crowdsource identifying potential threats</span> on
+              websites, thus safeguarding the web for future users. We provide a
+              clean and straightforward User Experience to engage more
+              cybersecurity fanatics. Despite being a giant in the tech world,
+              several Indian companies, private and government-run are{" "}
+              <span>
+                {" "}
+                still not secure and frequently experience security breaches.
+              </span>
             </p>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              BugBase also provides organizations with the ability to{" "}
+              <span> host Capture The Flag (CTFs) </span> events for
+              cybersecurity novices to practice, learn and grow into
+              professionals. We believe that if we want a truly Digital India,
+              we must defend its foundation in every possible way. Therefore, we
+              would <span> collaborate with various private companies </span>{" "}
+              and the Indian government to ensure the safety of all
+              applications. India&apos;s cybersecurity environment is slowly
+              maturing, and we will be pioneers in India&apos;s path of{" "}
+              <span> becoming a global cybersecurity giant. </span>
             </p>
           </div>
         </div>
@@ -78,22 +91,33 @@ export default function BugbaseProject() {
           <h2 className={styles.aboutMoonnetsHeading}>My Role</h2>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              Working as a <span>full-stack developer</span> at BugBase, I
+              joined the team when the company had{" "}
+              <span>started developing the second version </span> of the
+              platform, with a new tech-stack{" "}
+              <span>(from React to Next, Node to Node+TS)</span>.
             </p>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              I had mainly worked in{" "}
+              <span>shifting the backend architecture</span>
+              from plain Javascript to Typescript, and{" "}
+              <span>
+                add additional features such as pagination, search, and sorting.
+              </span>
+              . I was also responsible for{" "}
+              <span>integration of the api and the frontend</span>, which can
+              sometimes be the most difficult task, as you have to deal with
+              issues such as{" "}
+              <span>
+                CORS, what computation to do in the frontend, and what in the
+                api, etc.{" "}
+              </span>
+            </p>
+            <p>
+              I also had the opportunity to work on the marketing and business
+              side where I had
+              <span> contacted and mailed various companies and founders </span>
+              to sign up on our platform for their bug bounties.
             </p>
           </div>
         </div>

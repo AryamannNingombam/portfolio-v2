@@ -40,6 +40,10 @@
       font-size: 1.3rem;
       font-weight: 300;
       span {
+        transition: 0.3s ease;
+        &:hover {
+          color: $secondary-color;
+        }
         font-weight: 500;
       }
     }
@@ -69,6 +73,10 @@
       font-weight: 300;
       font-size: 1.3rem;
       span {
+        transition: 0.3s ease;
+        &:hover {
+          color: $secondary-color;
+        }
         font-weight: 500;
       }
     }
@@ -90,6 +98,10 @@
         margin-bottom: 30px;
         a {
           color: $light-text-color !important;
+          transition: 0.3s ease;
+          &:hover {
+            color: $secondary-color !important;
+          }
         }
         span {
           font-weight: 500;

@@ -43,6 +43,10 @@
           font-size: 4.3rem;
           color: $light-text-color;
           font-weight: medium;
+          transition: 0.3s ease;
+          &:hover {
+            color: $secondary-color;
+          }
         }
         .subheading {
           margin-top: 10px;
@@ -53,9 +57,12 @@
         .content {
           font-size: 1.3rem;
           color: $light-text-color;
-
           span {
+            transition: 0.3s ease;
             font-weight: 500;
+            &:hover {
+              color: $secondary-color;
+            }
           }
         }
       }
