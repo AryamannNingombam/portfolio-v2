@@ -5,9 +5,13 @@ import AntimatterMainLogo from "assets/projects/antimatter-web/antimatter-big-lo
 import MainImage1 from "assets/projects/antimatter-web/main-image-1.png";
 import MainImage2 from "assets/projects/antimatter-web/main-image-2.png";
 import MainImage3 from "assets/projects/antimatter-web/main-image-3.png";
+import Head from "next/head";
 export default function AntimatterWebProject() {
   return (
     <NavbarWrapper>
+      <Head>
+        <title>antimatterlabs.in - Aryamann Ningombam</title>
+      </Head>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
           <h1 className={styles.heading}>Antimatter Web</h1>
@@ -16,22 +20,10 @@ export default function AntimatterWebProject() {
         <div className={styles.descriptionSection}>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
-            </p>
-            <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              Antimatter is an <span> ecommerce platform </span> where you have
+              the option to buy the product you want for a{" "}
+              <span> fixed price </span> or you can sell it{" "}
+              <span> with a bidding system. </span>
             </p>
           </div>
           <div className={styles.image}>
@@ -50,22 +42,11 @@ export default function AntimatterWebProject() {
           <h2 className={styles.aboutMoonnetsHeading}>About Antimatter Web</h2>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
-            </p>
-            <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              Antimatter labs is{" "}
+              <span> one of the first ecommerce platforms in our country </span>{" "}
+              that provides sellers a platform{" "}
+              <span> to sell their product directly </span> or{" "}
+              <span> put it up for bidding.</span>
             </p>
           </div>
         </div>
@@ -76,22 +57,15 @@ export default function AntimatterWebProject() {
           <h2 className={styles.aboutMoonnetsHeading}>My Role</h2>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              This was a <span> freelance project </span> where I
+              <span> made the backend </span> and{" "}
+              <span> integrated the frontend and the backend </span>, worked in
+              the whole <span> payment flow </span>
+              using <span> Razorpay </span>
             </p>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              The backend is built on <span> Node.js </span> and{" "}
+              <span> Typescript </span> and the frontend is built on NextJs.
             </p>
           </div>
         </div>

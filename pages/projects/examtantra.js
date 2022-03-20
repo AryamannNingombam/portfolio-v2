@@ -5,9 +5,13 @@ import ExamtantraMainLogo from "assets/projects/examtantra/examtantra-big-logo.p
 import MainImage1 from "assets/projects/examtantra/main-image-1.png";
 import MainImage2 from "assets/projects/examtantra/main-image-2.png";
 import MainImage3 from "assets/projects/examtantra/main-image-3.png";
+import Head from "next/head";
 export default function ExamtantraProject() {
   return (
     <NavbarWrapper>
+      <Head>
+        <title>Examtantra - Aryamann Ningombam</title>
+      </Head>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
           <h1 className={styles.heading}>Examtantra</h1>

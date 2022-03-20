@@ -3,6 +3,7 @@ import Navbar from "components/layout/navbar";
 import Styles from "styles/components/navbar-wrapper.module.scss";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Footer from "./footer";
 export default function NavbarWrapper({ children }) {
   const scrollingContainer = useRef();
   // scrollingContainer.current.scrollIntoView({
@@ -21,6 +22,7 @@ export default function NavbarWrapper({ children }) {
       >
         {children}
       </motion.div>
+      <Footer />
     </>
   );
 }

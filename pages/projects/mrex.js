@@ -2,11 +2,14 @@ import NavbarWrapper from "components/common/navbar-wrapper";
 import Image from "next/image";
 import styles from "styles/components/common/project.module.scss";
 import MrexMainLogo from "assets/projects/mrex/mrex-big-logo.png";
-import MainImage2 from "assets/projects/mrex/main-image-2.png";
 import MainImage3 from "assets/projects/mrex/main-image-3.png";
+import Head from "next/head";
 export default function MrexProject() {
   return (
     <NavbarWrapper>
+      <Head>
+        <title>MRex - Aryamann Ningombam</title>
+      </Head>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
           <h1 className={styles.heading}>Mrex</h1>

@@ -5,9 +5,13 @@ import MetahackerAdminLogo from "assets/projects/metahacker-admin/metahacker-adm
 import MainImage1 from "assets/projects/metahacker-admin/main-image-1.png";
 import MainImage2 from "assets/projects/metahacker-admin/main-image-2.png";
 import MainImage3 from "assets/projects/metahacker-admin/main-image-3.png";
+import Head from "next/head";
 export default function MetahackerAdminProject() {
   return (
     <NavbarWrapper>
+      <Head>
+        <title>hackerz-prod.web.app - Aryamann Ningombam</title>
+      </Head>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
           <h1 className={styles.heading}>hackerz-prod.web.app</h1>

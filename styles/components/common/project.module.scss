@@ -96,6 +96,8 @@
       line-height: 2rem;
       .section {
         margin-bottom: 30px;
+        transition: 0.3s ease;
+
         a {
           color: $light-text-color !important;
           transition: 0.3s ease;

@@ -20,6 +20,10 @@
       span {
         color: $secondary-color;
         font-weight: 500;
+        transition: 0.3s ease;
+        &:hover {
+          color: $light-text-color;
+        }
       }
     }
   }

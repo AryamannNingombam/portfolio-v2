@@ -5,9 +5,13 @@ import OutremoteAdminLogo from "assets/projects/outremote-admin/outremote-admin-
 import MainImage1 from "assets/projects/outremote-admin/main-image-1.png";
 import MainImage2 from "assets/projects/outremote-admin/main-image-2.png";
 import MainImage3 from "assets/projects/outremote-admin/main-image-3.png";
+import Head from "next/head";
 export default function OutremoteAdminProject() {
   return (
     <NavbarWrapper>
+      <Head>
+        <title>outremote.web.app - Aryamann Ningombam</title>
+      </Head>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
           <h1 className={styles.heading}>outremote.web.app</h1>

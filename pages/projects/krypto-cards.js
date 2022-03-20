@@ -5,9 +5,13 @@ import KryptoMainLogo from "assets/projects/krypto-cards/krypto-cards-big-logo.p
 import MainImage1 from "assets/projects/krypto-cards/main-image-1.png";
 import MainImage2 from "assets/projects/krypto-cards/main-image-2.png";
 import MainImage3 from "assets/projects/krypto-cards/main-image-3.png";
+import Head from "next/head";
 export default function KryptoCardsProject() {
   return (
     <NavbarWrapper>
+      <Head>
+        <title>kryptocards.tech - Aryamann Ningombam</title>
+      </Head>
       <div className={styles.mainDiv}>
         <div className={styles.headingSection}>
           <h1 className={styles.heading}>kryptocards.tech</h1>
