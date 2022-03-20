@@ -20,7 +20,8 @@
     "react-topbar-progress-indicator": "^4.1.0",
     "react-vertical-timeline-component": "^3.5.2",
     "sass": "^1.49.7",
-    "smooth-scrollbar": "^8.7.4"
+    "smooth-scrollbar": "^8.7.4",
+    "swiper": "^8.0.7"
   },
   "devDependencies": {
     "eslint": "8.8.0",

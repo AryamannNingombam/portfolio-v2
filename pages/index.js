@@ -6,6 +6,7 @@ import Achievements from "components/home/achievements";
 import Timeline from "components/home/timeline";
 import Contact from "components/home/contact";
 import Head from "next/head";
+import TravelSection from "components/home/travel";
 export default function Home() {
   return (
     <NavbarWrapper>
@@ -52,6 +53,7 @@ export default function Home() {
         name="description"
         content="This is contact section of the portfolio website of Aryamann Ningombam."
       />
+      <TravelSection />
 
       <Contact />
     </NavbarWrapper>
