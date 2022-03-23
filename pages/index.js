@@ -53,7 +53,7 @@ export default function Home() {
         name="description"
         content="This is contact section of the portfolio website of Aryamann Ningombam."
       />
-      <TravelSection />
+      {/* <TravelSection /> */}
 
       <Contact />
     </NavbarWrapper>

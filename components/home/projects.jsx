@@ -79,7 +79,9 @@ export default function Projects() {
           </div>
         </div>
         <div className={Styles.projectrev}>
-          <Image alt="image" src={SvayamLogo} width={400} height={400} />
+          <div className={Styles.image}>
+            <Image alt="image" src={SvayamLogo} width={400} height={400} />
+          </div>
           <div className={Styles.text}>
             <Link href="/projects/svayam">
               <span className={Styles.heading}>Svayam</span>
@@ -126,7 +128,9 @@ export default function Projects() {
           </div>
         </div>
         <div className={Styles.projectrev}>
-          <Image alt="image" src={AntimatterImage} width={300} height={100} />
+          <div className={Styles.image}>
+            <Image alt="image" src={AntimatterImage} width={300} height={300} />
+          </div>
           <div className={Styles.text}>
             <Link href="/projects/antimatter-web">
               <span className={Styles.heading}>antimatterlabs.in </span>
@@ -161,7 +165,9 @@ export default function Projects() {
           </div>
         </div>
         <div className={Styles.projectrev}>
-          <Image alt="image" src={OutremoteLogo} width={300} height={100} />
+          <div className={Styles.image}>
+            <Image alt="image" src={OutremoteLogo} width={300} height={300} />
+          </div>
           <div className={Styles.text}>
             <Link href="/projects/outremote-admin">
               <span className={Styles.heading}>outremote.web.app </span>

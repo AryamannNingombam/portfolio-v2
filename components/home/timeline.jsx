@@ -1,9 +1,8 @@
 import Styles from "styles/components/home/timeline.module.scss";
 import KryptoCardsLogo from "assets/projects/krypto-cards/krypto-cards-small-logo.png";
-import BugBaseLogo from "assets/projects/bugbase/bugbase-small-logo.png";
 import SpacenosLogo from "assets/projects/spacenos-small-logo.png";
 import Image from "next/image";
-import Link from "next/link";
+import FormiLogo from "assets/projects/formi.png";
 export default function Timeline() {
   return (
     <section id="timeline" className={Styles.mainDiv}>
@@ -70,7 +69,7 @@ export default function Timeline() {
 
         <div className={`${Styles.workTile} ${Styles.workTile3}`}>
           <Image
-            src={BugBaseLogo}
+            src={FormiLogo}
             alt="f"
             width={330}
             height={330}
@@ -78,17 +77,17 @@ export default function Timeline() {
           />
           <div className={Styles.workDetails}>
             <a target="_blank" rel="noreferrer" href="https://bugbase.in">
-              BugBase
+              Formi
             </a>
             <div className={Styles.designation}>
-              FULL-STACK DEVELOPER
-              <span className={Styles.light}> ( Jan 22 - Present )</span>
+              PRODUCT MANAGER
+              <span className={Styles.light}> ( March 22 - Present )</span>
             </div>
             <div className={Styles.description}>
-              Full-Stack developer at BugBase, mainly{" "}
-              <span>handling the backend</span> and{" "}
-              <span> integrations with the frontend,</span> built on{" "}
-              <span> Node+TS & Nextjs</span>
+              Product manager at Formi
+              <span>, handling the whole tech with the CTO</span> and parallely
+              working <span>on the backend,</span> making sure that the tech
+              team is on the same page with the business.
             </div>
           </div>
         </div>
