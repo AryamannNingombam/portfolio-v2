@@ -47,7 +47,7 @@ export default function Projects() {
 
             <span className={Styles.subheading}>BUGBASE</span>
             <p className={Styles.content}>
-              <span>The first,</span> consolidated
+              <span>The first </span> consolidated
               <span> bug bounty platform in India</span>, BugBase is a student
               run startup that provides a <span>SaaS platform</span> to
               companies for to host their bug bounties, be it public or private.

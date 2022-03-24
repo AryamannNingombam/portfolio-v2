@@ -61,17 +61,18 @@ export default function KryptoCardsProject() {
               The Moonnets are a <span> collection of 219 Unique NFTs </span>
               where each NFT represents one moon of our Solar System. Moonnets
               is our <span>first project</span> & it is the{" "}
-              <span>first project</span>
+              <span> first project </span>
               that brings all the <span>moons of the solar system</span> under
               one NFT collection. We have our own smart contract, no third party
-              interference, & are <span>bootstrapped as a student startup</span>
+              interference, & are{" "}
+              <span>bootstrapped as a student startup.</span>
             </p>
             <p>
               We have been in talks with{" "}
               <span> international and national </span>
               NFT sellers & buyers, have taken feedback from several people
               leading to
-              <span>multiple pivots,</span> & have been shortlisted for
+              <span> multiple pivots,</span> & have been shortlisted for
               <span> Shark Tank India, season 1.</span>
             </p>
           </div>
@@ -90,7 +91,7 @@ export default function KryptoCardsProject() {
               </span>
               , I was involved in both technical and non-technical aspects of
               the company,
-              <span>managing a team of 16,</span> making sure that the team was
+              <span> managing a team of 16,</span> making sure that the team was
               not slacking off & was always on the <span>right track</span>.
             </p>
             <p>
