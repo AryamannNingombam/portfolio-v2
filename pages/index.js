@@ -7,6 +7,7 @@ import Timeline from "components/home/timeline";
 import Contact from "components/home/contact";
 import Head from "next/head";
 import TravelSection from "components/home/travel";
+import Publications from "components/home/publications";
 export default function Home() {
   return (
     <NavbarWrapper>
@@ -48,6 +49,7 @@ export default function Home() {
         content="This is achievements section of the portfolio website of Aryamann
         Ningombam."
       />
+      <Publications />
       <Achievements />
       <meta
         name="description"

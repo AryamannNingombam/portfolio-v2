@@ -148,39 +148,6 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className={Styles.project}>
-          <div styles={Styles.image}>
-            <Image alt="image" src={MetaHackerImage} width={400} height={400} />
-          </div>
-          <div className={Styles.text}>
-            <Link href="/projects/metahacker-admin">
-              <span className={Styles.heading}>hackerz-prod.web.app</span>
-            </Link>
-            <span className={Styles.subheading}>SPACENOS</span>
-            <p className={Styles.content}>
-              A platform for users to <span>learn ethical hacking, </span>{" "}
-              delving into topics such as{" "}
-              <span>web exploitation, XSS attacks, etc.</span>
-            </p>
-          </div>
-        </div>
-        <div className={Styles.projectrev}>
-          <div className={Styles.image}>
-            <Image alt="image" src={OutremoteLogo} width={300} height={300} />
-          </div>
-          <div className={Styles.text}>
-            <Link href="/projects/outremote-admin">
-              <span className={Styles.heading}>outremote.web.app </span>
-            </Link>
-            <span className={Styles.subheading}>SPACENOS</span>
-            <p className={Styles.content}>
-              Outremote connects interns who are <span className="jae"></span>{" "}
-              looking for industry level experience with companies working on
-              <span>innovative ideas.</span> Our platform provides growth hacks
-              for businesses to <span>achieve their key objectives.</span>
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   );

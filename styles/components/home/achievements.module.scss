@@ -16,7 +16,13 @@
     .listItem {
       margin: 13px 0;
       font-size: 1.2rem;
-
+      a {
+        color: $secondary-color;
+        transition: 0.3s ease;
+        &:hover {
+          color: $light-text-color;
+        }
+      }
       span {
         color: $secondary-color;
         font-weight: 500;

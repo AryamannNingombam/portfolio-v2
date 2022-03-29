@@ -20,22 +20,10 @@ export default function MetahackerAdminProject() {
         <div className={styles.descriptionSection}>
           <div className={styles.description}>
             <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
-            </p>
-            <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
+              A platform where people who are{" "}
+              <span>new in the world of hacking </span>
+              get a list of <span> consolidated topics </span> that they should
+              start with to become a <span>hacker</span>.
             </p>
           </div>
           <div className={styles.image}>
@@ -53,15 +41,7 @@ export default function MetahackerAdminProject() {
         <div className={styles.aboutMoonnets}>
           <h2 className={styles.aboutMoonnetsHeading}>About Metahacker</h2>
           <div className={styles.description}>
-            <p>
-              A realm, breathed to life, colossal yet the most oblivious one.
-              Enshrouded in the allure of darkness, it still shines the
-              brightest, basking in its glory - the abode of ephemeral galaxies
-              - the Cosmos sovereign. Birthed and ruled by the primordial god of
-              light, atmosphere, space, and heaven - Aether! We are all only a
-              minuscule part of this vast expanse, one of its significant and
-              active provinces - The Solar System.
-            </p>
+            <p>Metah</p>
             <p>
               A realm, breathed to life, colossal yet the most oblivious one.
               Enshrouded in the allure of darkness, it still shines the
