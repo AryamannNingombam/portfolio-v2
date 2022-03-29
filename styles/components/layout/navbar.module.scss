@@ -4,18 +4,19 @@ $hamburger-height: 3px;
 $hamburger-width: 40px;
 $hamburger-distance: 13px;
 .navbarMenuButton {
-  z-index: 100;
+  z-index: 1000000;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+
   width: 100%;
   height: $landing-navbar-height;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  background-color: #131515;
   .image {
     margin-left: 40px;
     z-index: 1000;
@@ -24,6 +25,7 @@ $hamburger-distance: 13px;
     display: flex;
     flex-direction: row;
     align-items: center;
+
     .linkContainer {
       display: flex;
       flex-direction: row;

@@ -86,6 +86,12 @@ export default function BugbaseProject() {
               <span> 8am in the morning </span> and were ready with most of the
               product by <span>7pm</span>.
             </p>
+            <p>
+              I was the one who <span> managed all the formalities </span>
+              that were required by the organizers to make sure that our team
+              had a <span> smooth run </span> and we could
+              <span> build the best product in the given time frame.</span>
+            </p>
           </div>
         </div>
         <div className={styles.linksAndStack}>
