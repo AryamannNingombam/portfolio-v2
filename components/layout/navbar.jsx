@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Styles from "styles/components/layout/navbar.module.scss";
 import { motion } from "framer-motion";
 import { NAVBAR_LINKS } from "constants";
@@ -23,8 +23,25 @@ const container = {
 };
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    const changeWidth = () => {
+      if (window.scrollY <= 80) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+    };
+
+    changeWidth();
+    window.addEventListener("scroll", changeWidth);
+  });
   return (
     <div
+      style={{
+        top: showNavbar ? "0" : "-80px",
+      }}
       onClick={() => setMenuOpen((previous) => !previous)}
       className={`${Styles.navbarMenuButton}`}
     >
