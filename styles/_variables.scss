@@ -14,6 +14,26 @@ $primary-font: "Inter", sans-serif;
       @content;
     }
   }
+  @if $breakpoint==f3 {
+    @media only screen and (max-width: 550px) {
+      @content;
+    }
+  }
+  @if $breakpoint==f4 {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  }
+  @if $breakpoint==f5 {
+    @media only screen and (max-width: 350px) {
+      @content;
+    }
+  }
+  @if $breakpoint==f6 {
+    @media only screen and (max-width: 250px) {
+      @content;
+    }
+  }
 }
 
 // NAVBAR

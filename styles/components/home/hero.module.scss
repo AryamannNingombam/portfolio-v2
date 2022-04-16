@@ -15,16 +15,6 @@
       font-size: 5rem;
       color: $light-text-color;
       width: fit-content;
-      @include responsive(f1) {
-        font-size: 4.5rem;
-      }
-      @include responsive(f2) {
-        font-size: 4rem;
-      }
-      .bold {
-        font-weight: 500;
-        padding: 10px;
-      }
       .strikethrough:hover {
         color: $secondary-color;
       }
@@ -32,6 +22,31 @@
         height: 5px;
         margin-top: -2.7rem;
         background: $secondary-color;
+      }
+      @include responsive(f1) {
+        font-size: 4.5rem;
+        .strikethrough:after {
+          height: 0;
+        }
+      }
+      @include responsive(f2) {
+        font-size: 4rem;
+      }
+      @include responsive(f3) {
+        font-size: 3.1rem;
+      }
+      @include responsive(f4) {
+        font-size: 2.2rem;
+      }
+      @include responsive(f5) {
+        font-size: 1.9rem;
+      }
+      @include responsive(f6) {
+        font-size: 1.5rem;
+      }
+      .bold {
+        font-weight: 500;
+        padding: 10px;
       }
     }
     .description {
@@ -47,13 +62,30 @@
         margin-top: -1rem;
         background: $light-text-color;
       }
+      @include responsive(f1) {
+        font-size: 1.5rem;
+        .strikethrough:hover {
+          color: $light-text-color;
+        }
+        .strikethrough:after {
+          height: 0px;
+        }
+      }
+      @include responsive(f2) {
+        font-size: 1.3rem;
+      }
+      @include responsive(f3) {
+        font-size: 1.1rem;
+      }
+      @include responsive(f4) {
+        font-size: 0.9rem;
+      }
     }
     .links {
       padding-top: 30px;
       display: flex;
       width: 100%;
       flex-direction: row;
-      align-items: center;
       justify-content: space-between;
       .right {
         justify-content: flex-end;
@@ -64,22 +96,26 @@
             color: $light-text-color;
           }
         }
+        @include responsive(f1) {
+          justify-content: flex-start;
+        }
+      }
+      @include responsive(f1) {
+        // justify-content: center;
       }
       .left {
-        justify-content: flex-start;
-      }
-      div {
+        width: 40%;
         display: flex;
         flex-direction: row;
-        width: 50%;
-        a {
-          .link {
-            margin-right: 10rem;
-            color: $secondary-color;
-            transition: 0.2s ease-in-out;
-            &:hover {
-              color: $light-text-color;
-            }
+        justify-content: space-between;
+      }
+      a {
+        .link {
+          // margin-right: 10rem;
+          color: $secondary-color;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: $light-text-color;
           }
         }
       }

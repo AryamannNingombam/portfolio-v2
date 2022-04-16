@@ -18,6 +18,14 @@ export default function HomeImage({ image, krypto }) {
   const controls = useAnimation();
   const { ref, inView } = useInView();
   const [done, setDone] = React.useState(false);
+  const [disable, setDisable] = React.useState(false);
+  React.useEffect(() => {
+    if (window.screen.width < 768) {
+      setDisable(true);
+    } else {
+      setDisable(false);
+    }
+  }, []);
   React.useEffect(() => {
     if (!done) {
       if (inView) {
@@ -38,14 +46,16 @@ export default function HomeImage({ image, krypto }) {
       className={Styles.mainDiv}
     >
       {" "}
-      <Image
-        src={image}
-        layout="fixed"
-        width={krypto ? 500 : 380}
-        objectFit="cover"
-        height={500}
-        alt="profile"
-      />
+      {!disable && (
+        <Image
+          src={image}
+          layout="fixed"
+          width={krypto ? 500 : 380}
+          objectFit="cover"
+          height={500}
+          alt="profile"
+        />
+      )}
     </motion.div>
   );
 }

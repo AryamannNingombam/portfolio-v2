@@ -15,28 +15,25 @@ export default function Timeline() {
 
         <div className={`${Styles.workTile} ${Styles.workTile1}`}>
           <Image
-            src={KryptoCardsLogo}
+            src={FormiLogo}
             alt="f"
-            width={530}
-            height={530}
+            width={330}
+            height={330}
             className={Styles.workImage}
           />
           <div className={Styles.workDetails}>
-            <a target="_blank" rel="noreferrer" href="https://kryptocards.tech">
-              Krypto Cards
+            <a target="_blank" rel="noreferrer" href="https://bugbase.in">
+              Formi
             </a>
             <div className={Styles.designation}>
-              CO-FOUNDER & COO
-              <span className={Styles.light}> ( June 21 - December 21 )</span>
+              CHIEF TECHNOLOGY OFFICER
+              <span className={Styles.light}> ( March 22 - Present )</span>
             </div>
             <div className={Styles.description}>
-              <span>The first</span> Ethereum based NFT platform in{" "}
-              <span>India</span> . We are in talks with{" "}
-              <span>national and international NFT buyers</span> regarding our
-              first project, we&apos;ve{" "}
-              <span>cold-pitched our idea on Clubhouse,</span>
-              launched our own podcast, and have been{" "}
-              <span>shortlisted for Shark Tank India</span>(round 2).
+              Product manager at Formi
+              <span>, handling the whole tech with the CTO</span> and parallely
+              working <span>on the backend,</span> making sure that the tech
+              team is on the same page with the business.
             </div>
           </div>
         </div>
@@ -66,28 +63,30 @@ export default function Timeline() {
             </div>
           </div>
         </div>
-
         <div className={`${Styles.workTile} ${Styles.workTile3}`}>
           <Image
-            src={FormiLogo}
+            src={KryptoCardsLogo}
             alt="f"
-            width={330}
-            height={330}
+            width={530}
+            height={530}
             className={Styles.workImage}
           />
           <div className={Styles.workDetails}>
-            <a target="_blank" rel="noreferrer" href="https://bugbase.in">
-              Formi
+            <a target="_blank" rel="noreferrer" href="https://kryptocards.tech">
+              Krypto Cards
             </a>
             <div className={Styles.designation}>
-              PRODUCT MANAGER
-              <span className={Styles.light}> ( March 22 - Present )</span>
+              CO-FOUNDER & COO
+              <span className={Styles.light}> ( June 21 - December 21 )</span>
             </div>
             <div className={Styles.description}>
-              Product manager at Formi
-              <span>, handling the whole tech with the CTO</span> and parallely
-              working <span>on the backend,</span> making sure that the tech
-              team is on the same page with the business.
+              <span>The first</span> Ethereum based NFT platform in{" "}
+              <span>India</span> . We are in talks with{" "}
+              <span>national and international NFT buyers</span> regarding our
+              first project, we&apos;ve{" "}
+              <span>cold-pitched our idea on Clubhouse,</span>
+              launched our own podcast, and have been{" "}
+              <span>shortlisted for Shark Tank India</span>(round 2).
             </div>
           </div>
         </div>

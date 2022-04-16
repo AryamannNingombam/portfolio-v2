@@ -6,10 +6,10 @@ export default function Contact() {
       <div className={Styles.mainHeading}>Contact</div>
       <p>
         You can reach me at{" "}
-        <a href="mailto:hi@aryamann.com">
+        {/* <a href="mailto:hi@aryamann.com">
           <span>hi@aryamann.com</span>
         </a>{" "}
-        or{" "}
+        or{" "} */}
         <a href="mailto:aryamannsinghningombam@gmail.com">
           <span>aryamannsinghningombam@gmail.com.</span>
         </a>
