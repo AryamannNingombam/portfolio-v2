@@ -3,7 +3,13 @@ $secondary-color: #32cfa5;
 $light-text-color: #ffffff;
 $dark-text-color: #181818;
 $primary-font: "Inter", sans-serif;
+
 @mixin responsive($breakpoint) {
+  @if $breakpoint==f0 {
+    @media only screen and (max-width: 1250px) {
+      @content;
+    }
+  }
   @if $breakpoint==f1 {
     @media only screen and (max-width: 768px) {
       @content;

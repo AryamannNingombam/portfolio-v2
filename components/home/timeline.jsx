@@ -22,7 +22,7 @@ export default function Timeline() {
             className={Styles.workImage}
           />
           <div className={Styles.workDetails}>
-            <a target="_blank" rel="noreferrer" href="https://bugbase.in">
+            <a target="_blank" rel="noreferrer" href="https://formi.co.in">
               Formi
             </a>
             <div className={Styles.designation}>
@@ -30,10 +30,9 @@ export default function Timeline() {
               <span className={Styles.light}> ( March 22 - Present )</span>
             </div>
             <div className={Styles.description}>
-              Product manager at Formi
-              <span>, handling the whole tech with the CTO</span> and parallely
-              working <span>on the backend,</span> making sure that the tech
-              team is on the same page with the business.
+              Chief Technology Officer at Formi managing a{" "}
+              <span>team of 8</span> developers and ml scientists, helping the
+              team reach product to market fit
             </div>
           </div>
         </div>

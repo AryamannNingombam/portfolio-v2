@@ -1,9 +1,10 @@
+import MainHeading from "components/common/main-heading";
 import Styles from "styles/components/home/achievements.module.scss";
 
 export default function Publications() {
   return (
     <section className={Styles.mainDiv}>
-      <div className={Styles.mainHeading}>Publications</div>
+      <MainHeading heading="Publications" />
       <ul className={Styles.list}>
         <li className={Styles.listItem}>
           American Published Patent -

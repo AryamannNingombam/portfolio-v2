@@ -1,8 +1,9 @@
+import MainHeading from "components/common/main-heading";
 import Styles from "styles/components/home/achievements.module.scss";
 export default function Achievements() {
   return (
     <section id="achievements" className={Styles.mainDiv}>
-      <div className={Styles.mainHeading}>Other Achievements</div>
+      <MainHeading heading="Other Achievements" />
       <ul className={Styles.list}>
         <li className={Styles.listItem}>
           <span className={Styles.color}>Shortlisted</span> for representing

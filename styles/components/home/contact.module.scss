@@ -9,7 +9,6 @@
     font-size: 3.5rem;
     font-weight: 500;
   }
-
   p {
     width: 80%;
     margin-left: 0.5rem;
@@ -22,6 +21,15 @@
       &:hover {
         color: $light-text-color;
       }
+    }
+    @include responsive(f1) {
+      font-size: 1rem;
+    }
+    @include responsive(f1) {
+      font-size: 0.8rem;
+    }
+    @include responsive(f3) {
+      font-size: 0.6rem;
     }
   }
 }

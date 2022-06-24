@@ -37,8 +37,7 @@ export default function MrexProject() {
         </div>
         <div className={styles.mainImage}>
           <iframe
-            width="1100"
-            height="700"
+            className={styles.video}
             src="https://www.youtube.com/embed/kmI5YqM8KrU"
             title="YouTube video player"
             frameBorder="0"
@@ -90,8 +89,7 @@ export default function MrexProject() {
         </div>
         <div className={styles.mainImage}>
           <iframe
-            width="1100"
-            height="700"
+            className={styles.video}
             src="https://www.youtube.com/embed/VZ-uOMXVzOc"
             title="YouTube video player"
             frameBorder="0"

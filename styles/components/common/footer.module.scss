@@ -16,4 +16,7 @@
       color: $light-text-color;
     }
   }
+  @include responsive(f1) {
+    display: none;
+  }
 }

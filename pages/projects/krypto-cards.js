@@ -6,6 +6,7 @@ import MainImage1 from "assets/projects/krypto-cards/main-image-1.png";
 import MainImage2 from "assets/projects/krypto-cards/main-image-2.png";
 import MainImage3 from "assets/projects/krypto-cards/main-image-3.png";
 import Head from "next/head";
+import MainHeading from "components/common/main-heading";
 export default function KryptoCardsProject() {
   return (
     <NavbarWrapper>
@@ -46,7 +47,7 @@ export default function KryptoCardsProject() {
           <Image src={MainImage1} alt="f" />
         </div>
         <div className={styles.aboutMoonnets}>
-          <h2 className={styles.aboutMoonnetsHeading}>About Moonnets</h2>
+          <MainHeading heading={"About Moonnets"} />
           <div className={styles.description}>
             <p>
               A realm, breathed to life, colossal yet the most oblivious one.
@@ -81,7 +82,7 @@ export default function KryptoCardsProject() {
           <Image src={MainImage2} alt="f" />
         </div>
         <div className={styles.aboutMoonnets}>
-          <h2 className={styles.aboutMoonnetsHeading}>My Role</h2>
+          <MainHeading heading={"My Role"} />
           <div className={styles.description}>
             <p>
               As the <span>COO of the company,</span> and the primary person who

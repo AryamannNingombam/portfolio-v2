@@ -37,8 +37,7 @@ export default function BugbaseProject() {
         </div>
         <div className={styles.mainImage}>
           <iframe
-            width="1100"
-            height="700"
+            className={styles.video}
             src="https://www.youtube.com/embed/maI5PTvtnmY"
             title="YouTube video player"
             frameBorder="0"

@@ -16,9 +16,12 @@
     .topic {
       border-radius: 50%;
       margin: 40px;
-      width: 300px;
-      height: 300px;
-      text-align: center;
+      // width: 300px;
+      // height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       line-height: 40px;
       img {
         border-radius: 50%;
@@ -36,6 +39,46 @@
         color: $secondary-color;
         font-weight: 300;
         font-size: 1.1rem;
+      }
+    }
+    @include responsive(f0) {
+      .topic {
+        .image {
+          width: 200px;
+          height: 200px;
+        }
+        .topicHeading {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    @include responsive(f1) {
+      margin: 50px 0;
+      .topic {
+        .image {
+          width: 100px;
+          height: 100px;
+        }
+
+        margin: 20px;
+        .topicHeading {
+          font-size: 1.1rem;
+        }
+        .subheading {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    @include responsive(f2) {
+      margin: 20px 0;
+      .topic {
+        margin: 5px;
+        .topicHeading {
+          font-size: 0.8rem;
+        }
+        .subheading {
+          font-size: 0.6rem;
+        }
       }
     }
   }

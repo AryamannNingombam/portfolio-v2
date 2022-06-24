@@ -6,6 +6,15 @@
   width: 80%;
   font-weight: 300;
   z-index: 1000;
+  @include responsive(f2) {
+    min-height: 60vh;
+  }
+  @include responsive(f3) {
+    min-height: 55vh;
+  }
+  @include responsive(f4) {
+    min-height: 40vh;
+  }
   .childDiv {
     display: flex;
     flex-direction: column;

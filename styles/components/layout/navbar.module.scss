@@ -75,5 +75,8 @@ $hamburger-distance: 13px;
         box-shadow: 0 2px 5px rgba(47, 255, 217, 0.2);
       }
     }
+    @include responsive(f2) {
+      display: none;
+    }
   }
 }

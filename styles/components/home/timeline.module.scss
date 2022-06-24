@@ -1,13 +1,29 @@
 @import ".././../variables";
+
 .mainDiv {
   display: flex;
   flex-direction: column;
   width: 80%;
   justify-content: flex-start;
+  @include responsive(f0) {
+    margin-top: 5rem;
+  }
   .mainHeading {
     font-size: 3.5rem;
     font-weight: 500;
     margin-bottom: 4rem;
+    @include responsive(f0) {
+      font-size: 3rem;
+    }
+    @include responsive(f1) {
+      font-size: 2.4rem;
+    }
+    @include responsive(f2) {
+      font-size: 2rem;
+    }
+    @include responsive(f3) {
+      font-size: 1.7rem;
+    }
   }
   .timelineContainer {
     width: 100%;
@@ -52,8 +68,18 @@
       position: absolute;
       display: flex;
       align-items: center;
-
-      width: 40rem;
+      @include responsive(f0) {
+        width: 25rem;
+      }
+      @include responsive(f1) {
+        width: 20rem;
+      }
+      @include responsive(f2) {
+        width: 15rem;
+      }
+      @include responsive(f3) {
+        width: 10rem;
+      }
       .workDetails {
         margin-left: 1rem;
         a {
@@ -66,6 +92,15 @@
           &:hover {
             color: $secondary-color;
           }
+          @include responsive(f1) {
+            font-size: 1.5rem !important;
+          }
+          @include responsive(f2) {
+            font-size: 1.2rem !important;
+          }
+          @include responsive(f3) {
+            font-size: 1rem !important;
+          }
         }
 
         .designation {
@@ -75,6 +110,15 @@
           font-weight: 500;
           .light {
             font-weight: 300;
+          }
+          @include responsive(f1) {
+            font-size: 0.8rem;
+          }
+          @include responsive(f2) {
+            font-size: 0.6rem;
+          }
+          @include responsive(f3) {
+            font-size: 0.4rem;
           }
         }
         .description {
@@ -87,6 +131,15 @@
             &:hover {
               color: $secondary-color;
             }
+          }
+          @include responsive(f1) {
+            font-size: 0.8rem;
+          }
+          @include responsive(f2) {
+            font-size: 0.6rem;
+          }
+          @include responsive(f3) {
+            font-size: 0.4rem;
           }
         }
       }

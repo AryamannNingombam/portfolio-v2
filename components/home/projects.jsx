@@ -5,8 +5,6 @@ import BugBaseImage from "assets/projects/bugbase/bugbase-small-logo.png";
 import MrexImage from "assets/projects/mrex/mrex-logo.png";
 import ExamTantraImage from "assets/projects/examtantra/examtantra-logo.png";
 import AntimatterImage from "assets/projects/antimatter-web/antimatter-logo.png";
-import MetaHackerImage from "assets/projects/metahacker-admin/metahacker-admin-logo.png";
-import OutremoteLogo from "assets/projects/outremote-admin/outremote-logo.png";
 import SvayamLogo from "assets/projects/svayam/svayam-logo.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +16,9 @@ export default function Projects() {
       </div>
       <div className={Styles.projectsList}>
         <div className={Styles.project}>
-          <Image alt="image" src={MoonnetImage} width={400} height={400} />
+          <div className={Styles.image}>
+            <Image alt="image" src={MoonnetImage} width={400} height={400} />
+          </div>
           <div className={Styles.text}>
             <Link href="/projects/krypto-cards">
               <span className={Styles.heading}>kryptocards.tech </span>
@@ -37,14 +37,13 @@ export default function Projects() {
           </div>
         </div>
         <div className={Styles.projectrev}>
-          <div styles={Styles.image}>
+          <div className={Styles.image}>
             <Image alt="image" src={BugBaseImage} width={400} height={400} />
           </div>
           <div className={Styles.text}>
-            <Link rel="noreferrer" href="/projects/bugbase" target="_blank">
+            <Link href="/projects/bugbase">
               <span className={Styles.heading}>bugbase.in</span>
             </Link>
-
             <span className={Styles.subheading}>BUGBASE</span>
             <p className={Styles.content}>
               <span>The first </span> consolidated
@@ -57,8 +56,11 @@ export default function Projects() {
             </p>
           </div>
         </div>
+
         <div className={Styles.project}>
-          <Image alt="image" src={MrexImage} width={400} height={400} />
+          <div className={Styles.image}>
+            <Image alt="image" src={MrexImage} width={400} height={400} />
+          </div>
           <div className={Styles.text}>
             <Link href="/projects/mrex">
               <span className={Styles.heading}>MRex</span>
@@ -104,7 +106,7 @@ export default function Projects() {
           </div>
         </div>
         <div className={Styles.project}>
-          <div styles={Styles.image}>
+          <div className={Styles.image}>
             <Image alt="image" src={ExamTantraImage} width={400} height={400} />
           </div>
           <div className={Styles.text}>

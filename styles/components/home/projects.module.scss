@@ -19,15 +19,13 @@
       flex-direction: row;
       .text {
         margin-left: 4rem;
+        @include responsive(f0) {
+          margin: 0;
+        }
       }
       //space between the projects
     }
     .projectrev {
-      .image {
-        img {
-          border-radius: 50%;
-        }
-      }
       flex-direction: row-reverse;
       .text {
         padding-right: 4rem;
@@ -37,6 +35,16 @@
     .projectrev {
       margin: 50px 0;
       display: flex;
+
+      .image {
+        @include responsive(f0) {
+          display: none !important;
+        }
+      }
+
+      @include responsive(f1) {
+        margin: 10px 0;
+      }
       .text {
         display: flex;
         width: 80%;
@@ -69,6 +77,22 @@
               color: $secondary-color;
             }
           }
+        }
+        @include responsive(f0) {
+          width: 100%;
+
+          .heading {
+            font-size: 1.8rem;
+          }
+          .subheading {
+            font-size: 0.8rem;
+          }
+          .content {
+            font-size: 0.7rem;
+          }
+        }
+        @include responsive(f1) {
+          margin: 30px 0;
         }
       }
     }
