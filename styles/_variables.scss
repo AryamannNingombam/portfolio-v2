@@ -2,7 +2,7 @@ $primary-bg: #131515;
 $secondary-color: #32cfa5;
 $light-text-color: #ffffff;
 $dark-text-color: #181818;
-$primary-font: "Inter", sans-serif;
+$primary-font: "Poppins", sans-serif;
 
 @mixin responsive($breakpoint) {
   @if $breakpoint==f0 {
@@ -47,3 +47,5 @@ $landing-navbar-height: 80px;
 
 // Max width of the container
 // $container-max-width: 1400px;
+
+$integral-font: "Integral";

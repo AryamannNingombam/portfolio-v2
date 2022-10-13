@@ -1,0 +1,42 @@
+@import "./variables";
+
+.background {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.87),
+      rgba(0, 0, 0, 1)
+    ),
+    url("https://i.ibb.co/3zCRHVY/aaaaa-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .heading {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .subheading {
+    font-size: 1.7rem;
+    font-family: $integral-font;
+    a {
+      color: #ed1d90;
+    }
+  }
+  .text {
+    margin-top: 10px;
+    color: #e6e6e6;
+    a {
+      color: #ed1d90;
+    }
+  }
+}

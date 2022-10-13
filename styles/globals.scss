@@ -1,5 +1,5 @@
 @import "./variables";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
 html,
 body {
@@ -7,8 +7,13 @@ body {
   margin: 0;
   overflow: auto;
   font-family: $primary-font;
-  background-color: $primary-bg !important;
   color: $light-text-color;
+}
+@font-face {
+  font-family: "Integral";
+  src: url("../public/fonts/IntegralCF-Regular.woff");
+  font-display: swap;
+  //preload
 }
 
 * {
