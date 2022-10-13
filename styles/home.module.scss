@@ -5,10 +5,10 @@
   min-height: 100vh;
   background-image: linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.87),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 1)
     ),
     url("https://i.ibb.co/3zCRHVY/aaaaa-1.jpg");
@@ -28,8 +28,13 @@
   .subheading {
     font-size: 1.7rem;
     font-family: $integral-font;
+    text-align: center;
     a {
       color: #ed1d90;
+    }
+    @include responsive(f4) {
+      margin: 10px auto;
+      font-size: 1.2rem;
     }
   }
   .text {
